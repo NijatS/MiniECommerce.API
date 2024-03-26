@@ -15,3 +15,4 @@ C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Infrastructure\o
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Infrastructure\obj\Debug\net7.0\refint\ECommerceAPI.Infrastructure.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Infrastructure\obj\Debug\net7.0\ECommerceAPI.Infrastructure.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Infrastructure\obj\Debug\net7.0\ref\ECommerceAPI.Infrastructure.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Infrastructure\obj\Debug\net7.0\ECommerceAPI.Infrastructure.sourcelink.json

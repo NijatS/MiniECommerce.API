@@ -13,3 +13,4 @@ C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\refint\ECommerceAPI.Application.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ref\ECommerceAPI.Application.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.sourcelink.json

@@ -17,13 +17,13 @@ namespace ECommerceAPI.Persistence
 		public static void AddPersistanceServices(this IServiceCollection service)
 		{
 			service.AddDbContext<ECommerceAPIDbContext>(options => options.
-		          UseSqlServer(Configuration.ConnectionString),ServiceLifetime.Singleton);
-			service.AddSingleton<ICustomerReadRepository,CustomerReadRepository>();
-			service.AddSingleton<ICustomerWriteRepository, CustomerWriteRepository>();
-			service.AddSingleton<IOrderReadRepository, OrderReadRepository>();
-			service.AddSingleton<IOrderWriteRepository, OrderWriteRepository>();
-			service.AddSingleton<IProductReadRepository, ProductReadRepository>();
-			service.AddSingleton<IProductWriteRepository, ProductWriteRepository>();
+		          UseSqlServer(Configuration.ConnectionString));
+			service.AddScoped<ICustomerReadRepository,CustomerReadRepository>();
+			service.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
+			service.AddScoped<IOrderReadRepository, OrderReadRepository>();
+			service.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
+			service.AddScoped<IProductReadRepository, ProductReadRepository>();
+			service.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 		}
 	}
 }

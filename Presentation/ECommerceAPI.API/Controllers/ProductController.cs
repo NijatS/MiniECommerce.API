@@ -1,6 +1,9 @@
 ﻿using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Application.ViewModels.Products;
+using ECommerceAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace ECommerceAPI.API.Controllers
 {
@@ -17,25 +20,51 @@ namespace ECommerceAPI.API.Controllers
 			_productReadRepository = productReadRepository;
 		}
 		[HttpGet]
-		public async Task Get()
+		public async Task<IActionResult> Get()
 		{
-			await _productWriteRepository.AddAsync(new()
-			{
-				Name = "Product 4",
-				Stock = 10,
-				Price = 15.2,
-			});
-			await _productWriteRepository.SaveAsync();
+			var products = _productReadRepository.GetAll(false);
+			return Ok(products);
 		}
 		[HttpGet("{id}")]
 		public async Task<IActionResult> Get(string id)
 		{
-			var data = await _productReadRepository.GetByIdAsync(id);
-
-			data.Name = "Deyisdimi?";
-			await _productWriteRepository.SaveAsync();
-			return Ok(data);
+			Product product = await _productReadRepository.GetByIdAsync(id,false);
+			return Ok(product);
 		}
+		[HttpPost]
+		public async Task<IActionResult> Post(VM_Product_Create model)
+		{
+			await _productWriteRepository.AddAsync(new(){
+				Name = model.Name,
+				Price = model.Price,
+				Stock = model.Stock
+			});
+			await _productWriteRepository.SaveAsync();
+			return StatusCode((int)HttpStatusCode.Created);
+		}
+
+		[HttpPut]
+		public async Task<IActionResult> Put(VM_Product_Update model)
+		{
+			Product product = await _productReadRepository.GetByIdAsync(model.Id);
+
+			product.Name = model.Name;
+			product.Price = model.Price;
+			product.Stock = model.Stock;
+
+			await _productWriteRepository.SaveAsync();
+			return StatusCode((int)HttpStatusCode.OK);
+
+		}
+
+		[HttpDelete("{id}")]
+		public async Task<IActionResult> Delete(string id)
+		{
+			await _productWriteRepository.Remove(id);
+			await _productWriteRepository.SaveAsync();
+			return Ok();
+		}
+
 		
 	}
 }

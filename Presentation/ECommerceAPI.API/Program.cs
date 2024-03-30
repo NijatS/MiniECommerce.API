@@ -9,6 +9,7 @@ namespace ECommerceAPI.API
 
 			builder.Services.AddPersistanceServices();
 			builder.Services.AddControllers();
+			builder.Services.AddCors(options=> options.AddDefaultPolicy(policy=> policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader()));
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
@@ -21,6 +22,7 @@ namespace ECommerceAPI.API
 				app.UseSwagger();
 				app.UseSwaggerUI();
 			}
+			app.UseCors();
 
 			app.UseHttpsRedirection();
 

@@ -9,12 +9,12 @@ namespace ECommerceAPI.API.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class ProductController : ControllerBase
+	public class ProductsController : ControllerBase
 	{
 		private readonly IProductWriteRepository _productWriteRepository;
 		private readonly IProductReadRepository _productReadRepository;
 
-		public ProductController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
+		public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
 		{
 			_productWriteRepository = productWriteRepository;
 			_productReadRepository = productReadRepository;
@@ -34,6 +34,10 @@ namespace ECommerceAPI.API.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Post(VM_Product_Create model)
 		{
+			if (!ModelState.IsValid)
+			{
+
+			}
 			await _productWriteRepository.AddAsync(new(){
 				Name = model.Name,
 				Price = model.Price,

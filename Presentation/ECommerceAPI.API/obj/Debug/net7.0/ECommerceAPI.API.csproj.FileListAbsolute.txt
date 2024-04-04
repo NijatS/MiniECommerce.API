@@ -86,3 +86,4 @@ C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\FluentValidation.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\ECommerceAPI.API.staticwebassets.runtime.json

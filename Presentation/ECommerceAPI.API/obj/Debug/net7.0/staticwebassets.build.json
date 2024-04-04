@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "leoVSQbnpQCMnQK2KQBmXAolIIKBJYeS5oBx2V2Akto=",
+  "Hash": "tAZvh0qjLgE+KTYY9RLK54n+p4fzIK/fJ7KYITouY+U=",
   "Source": "ECommerceAPI.API",
   "BasePath": "_content/ECommerceAPI.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ECommerceAPI.API\\wwwroot",
+      "Source": "ECommerceAPI.API",
+      "ContentRoot": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\",
+      "BasePath": "_content/ECommerceAPI.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

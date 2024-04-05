@@ -1,24 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\logo-2.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\logo-2.png"
-    },
-    {
-      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\logo-3.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\logo-3.png"
-    },
-    {
-      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\logo-n-2.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\logo-n-2.png"
-    },
-    {
-      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\logo-n.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\logo-n.png"
-    },
-    {
-      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\logo.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\logo.png"
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\logo-n-.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\logo-n-.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ECommerceAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,7 +1,7 @@
 using ECommerceAPI.Application.Validators.Products;
 using ECommerceAPI.Infrastructure;
-using ECommerceAPI.Infrastructure.Enums;
 using ECommerceAPI.Infrastructure.Filters;
+using ECommerceAPI.Infrastructure.Services.Storage.Azure;
 using ECommerceAPI.Infrastructure.Services.Storage.Local;
 using ECommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
@@ -16,8 +16,8 @@ namespace ECommerceAPI.API
 			builder.Services.AddPersistanceServices();
 			builder.Services.AddInfrastructureServices();
 
-			//	builder.Services.AddStorage<LocalStorage>();
-			builder.Services.AddStorage(StorageType.Local);
+			builder.Services.AddStorage<AzureStorage>();
+			//builder.Services.AddStorage(StorageType.Local);
 
 			builder.Services.AddControllers(option=> option.Filters.Add<ValidationFilter>())
 				.AddFluentValidation(configuration=>configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())

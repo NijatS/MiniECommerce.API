@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\validators\\products\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\validators\\products\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\queries\\productimagefile\\getproductimages\\getproductimagesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\queries\\productimagefile\\getproductimages\\getproductimagesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\queries\\productimagefile\\getproductimages\\getproductimagesqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\queries\\productimagefile\\getproductimages\\getproductimagesqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\queries\\productimagefile\\getproductimages\\getproductimagesqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\queries\\productimagefile\\getproductimages\\getproductimagesqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateProductValidator.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABUAAAA",
+              "DocumentIndex": 3,
+              "Title": "GetProductImagesQueryResponse.cs",
+              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryResponse.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryResponse.cs",
+              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryResponse.cs",
+              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T17:08:24.127Z",
+              "WhenOpened": "2024-04-08T18:54:29.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GetProductImagesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryHandler.cs",
+              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryHandler.cs",
+              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryHandler.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T18:40:20.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetProductImagesQueryRequest.cs",
+              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryRequest.cs",
+              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryRequest.cs",
+              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Queries\\ProductImageFile\\GetProductImages\\GetProductImagesQueryRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T18:39:24.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAQwDUAAAAGAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAxwEYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:42:31.965Z",
+              "WhenOpened": "2024-04-08T17:59:58.34Z",
               "EditorCaption": ""
             }
           ]

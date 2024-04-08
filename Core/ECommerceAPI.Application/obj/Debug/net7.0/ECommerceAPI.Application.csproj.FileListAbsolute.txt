@@ -8,9 +8,9 @@ C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.AssemblyInfoInputs.cache
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.AssemblyInfo.cs
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.csproj.CoreCompileInputs.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.sourcelink.json
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerc.F181CD37.Up2Date
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\refint\ECommerceAPI.Application.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ref\ECommerceAPI.Application.dll
-C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net7.0\ECommerceAPI.Application.sourcelink.json

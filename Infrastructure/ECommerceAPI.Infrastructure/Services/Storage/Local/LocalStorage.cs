@@ -20,7 +20,7 @@ namespace ECommerceAPI.Infrastructure.Services.Storage.Local
 		}
 
 		public async Task DeleteAsync(string path, string fileName)
-		=> 	File.Delete($"{path}\\{fileName}");
+		=> File.Delete($"{path}\\{fileName}");
 
 		public List<string> GetFiles(string path)
 		{
@@ -33,6 +33,7 @@ namespace ECommerceAPI.Infrastructure.Services.Storage.Local
 
 		public async Task<List<(string fileName, string pathOrContainerName)>> UploadAsync(string path, IFormFileCollection files)
 		{
+
 			string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, path);
 
 			if (!Directory.Exists(uploadPath))
@@ -44,9 +45,11 @@ namespace ECommerceAPI.Infrastructure.Services.Storage.Local
 
 			foreach (IFormFile file in files)
 			{
-				string fileNewName = await FileRenameAsync(path, file.Name, HasFile);
-				await CopyFileAsync(Path.Combine(uploadPath, fileNewName), file);
-				datas.Add((fileNewName, $"{path}\\{file.Name}"));
+				string fileNewName = await FileRenameAsync(uploadPath, file.Name, HasFile);
+
+
+			await CopyFileAsync($"{uploadPath}\\{fileNewName}", file);
+				datas.Add((fileNewName, $"{path}\\{fileNewName}"));
 			}
 	
 			return datas;
@@ -55,11 +58,10 @@ namespace ECommerceAPI.Infrastructure.Services.Storage.Local
 		{
 			try
 			{
-				using (FileStream fileStream = new(path, FileMode.Create, FileAccess.Write, FileShare.None, 1024 * 1024, false))
-				{
-					await file.CopyToAsync(fileStream);
-					await fileStream.FlushAsync();
-				}
+				await using FileStream fileStream = new(path, FileMode.Create, FileAccess.Write, FileShare.None, 1024 * 1024, useAsync: false);
+
+				await file.CopyToAsync(fileStream);
+				await fileStream.FlushAsync();
 				return true;
 			}
 			catch (Exception ex)

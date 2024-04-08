@@ -1,8 +1,60 @@
 {
   "Files": [
     {
-      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\product-images\\logo-n-.png",
-      "PackagePath": "staticwebassets\\resource\\product-images\\logo-n-.png"
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\Apple-iPhone-15-Pro-lineup-hero-230912-jpg-newsapped.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\Apple-iPhone-15-Pro-lineup-hero-230912-jpg-newsapped.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iPhone-X-2.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\iPhone-X-2.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iPhone-X.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\iPhone-X.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\images.jpeg",
+      "PackagePath": "staticwebassets\\resource\\products\\images.jpeg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-1639476570.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-1639476570.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-1639476571.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-1639476571.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-1639476572.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-1639476572.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-1639476573.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-1639476573.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-1639476574.jpg",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-1639476574.jpg"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-2.png",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-2.png"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-3.png",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-3.png"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-4.png",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-4.png"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-5.png",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj-5.png"
+    },
+    {
+      "Id": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\wwwroot\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj.png",
+      "PackagePath": "staticwebassets\\resource\\products\\iphone-x-zilver-multiapple1600x600BGresize16777215-tj.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ECommerceAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",

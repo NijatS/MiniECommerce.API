@@ -1,3 +1,4 @@
+using ECommerceAPI.Application;
 using ECommerceAPI.Application.Validators.Products;
 using ECommerceAPI.Infrastructure;
 using ECommerceAPI.Infrastructure.Filters;
@@ -15,8 +16,9 @@ namespace ECommerceAPI.API
 
 			builder.Services.AddPersistanceServices();
 			builder.Services.AddInfrastructureServices();
+			builder.Services.AddApplicationService();
 
-			builder.Services.AddStorage<AzureStorage>();
+			builder.Services.AddStorage<LocalStorage>();
 			//builder.Services.AddStorage(StorageType.Local);
 
 			builder.Services.AddControllers(option=> option.Filters.Add<ValidationFilter>())

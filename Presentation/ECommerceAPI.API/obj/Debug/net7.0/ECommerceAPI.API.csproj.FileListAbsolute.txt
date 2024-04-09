@@ -94,3 +94,9 @@ C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.genruntimeconfig.cache
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ref\ECommerceAPI.API.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

@@ -10,3 +10,4 @@ C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net7.0\EC
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net7.0\refint\ECommerceAPI.Domain.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net7.0\ECommerceAPI.Domain.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net7.0\ref\ECommerceAPI.Domain.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Domain\obj\Debug\net7.0\ECommerceAPI.Domain.csproj.AssemblyReference.cache

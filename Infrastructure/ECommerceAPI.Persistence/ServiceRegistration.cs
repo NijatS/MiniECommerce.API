@@ -1,6 +1,7 @@
 ﻿
 using ECommerceAPI.Application.Repositories;
 using ECommerceAPI.Application.Repositories.Files;
+using ECommerceAPI.Domain.Entities.Identity;
 using ECommerceAPI.Persistence.Contexts;
 using ECommerceAPI.Persistence.Repositories;
 using ECommerceAPI.Persistence.Repositories.File;
@@ -20,6 +21,18 @@ namespace ECommerceAPI.Persistence
 		{
 			service.AddDbContext<ECommerceAPIDbContext>(options => options.
 		          UseSqlServer(Configuration.ConnectionString));
+
+			service.AddIdentity<AppUser, AppRole>(options =>
+			{
+				options.Password.RequiredLength = 6;
+				options.Password.RequireNonAlphanumeric = true;
+				options.Password.RequireUppercase = true;
+				options.Password.RequireLowercase = true;
+				options.Password.RequireDigit = true;
+				options.User.RequireUniqueEmail = true;
+			}
+				
+				).AddEntityFrameworkStores<ECommerceAPIDbContext>();
 
 			service.AddScoped<ICustomerReadRepository,CustomerReadRepository>();
 			service.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();

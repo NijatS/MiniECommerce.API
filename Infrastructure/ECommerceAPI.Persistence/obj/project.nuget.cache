@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aHp4fwUMHUEQ3MrXoYbBYQV/m3iEXe8H/q+NUZDRLh89Lbb/eMYKL+6lLp6If+R/oCxGhQ8s+1pc+MjE3fUUUw==",
+  "dgSpecHash": "k0HjB3chvs0MSGqK4KdgKREM/CVvApF6UPBpB+nD5o+RBHDxDFFpQZJY6SKn3XYVm5JRRZ2HyMhrRj7lMYn2cQ==",
   "success": true,
   "projectFilePath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
   "expectedPackageFiles": [

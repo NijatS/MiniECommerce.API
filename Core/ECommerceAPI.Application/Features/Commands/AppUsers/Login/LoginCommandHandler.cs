@@ -1,4 +1,6 @@
-﻿using ECommerceAPI.Application.Exceptions;
+﻿using ECommerceAPI.Application.Abstractions.Token;
+using ECommerceAPI.Application.DTOs;
+using ECommerceAPI.Application.Exceptions;
 using ECommerceAPI.Domain.Entities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -14,11 +16,13 @@ namespace ECommerceAPI.Application.Features.Commands.AppUsers.Login
 	{
 		readonly UserManager<AppUser> _userManager;
 		readonly SignInManager<AppUser> _signInManager;
+		readonly ITokenHandler _tokenHandler;
 
-		public LoginCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+		public LoginCommandHandler(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, ITokenHandler tokenHandler)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
+			_tokenHandler = tokenHandler;
 		}
 
 		public async Task<LoginCommandResponse> Handle(LoginCommandRequest request, CancellationToken cancellationToken)
@@ -35,9 +39,10 @@ namespace ECommerceAPI.Application.Features.Commands.AppUsers.Login
 
 			if (result.Succeeded)
 			{
-
+			   Token token =_tokenHandler.CreateAccessToken(5);
+				return new LoginCommandSuccessResponse() { Token=token };
 			}
-			return new();
+			return new LoginCommandErrorResponse() { Message = "Username or password is incorrect" };
 		}
 	}
 }

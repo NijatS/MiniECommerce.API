@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Abstractions.Token;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.Abstractions.Token;
 using ECommerceAPI.Application.DTOs;
 using ECommerceAPI.Domain.Entities.Identity;
 using Google.Apis.Auth;
@@ -15,60 +16,20 @@ namespace ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin
 {
 	public class GoogleLoginCommandHandler : IRequestHandler<GoogleLoginCommandRequest, GoogleLoginCommandResponse>
 	{
-		readonly UserManager<AppUser> _userManager;
-		readonly IConfiguration _configuration;
-		readonly ITokenHandler _tokenHandler;
+		readonly IAuthService _service;
 
-		public GoogleLoginCommandHandler(UserManager<AppUser> userManager, IConfiguration configuration, ITokenHandler tokenHandler)
+		public GoogleLoginCommandHandler(IAuthService service)
 		{
-			_userManager = userManager;
-			_configuration = configuration;
-			_tokenHandler = tokenHandler;
+			_service = service;
 		}
 
 		public async Task<GoogleLoginCommandResponse> Handle(GoogleLoginCommandRequest request, CancellationToken cancellationToken)
 		{
-			var settings = new GoogleJsonWebSignature.ValidationSettings()
-			{
-				Audience = new List<string> { "357752492573-ffekgnm8cnn2a7ab9biiok4beadoggjn.apps.googleusercontent.com" }
-			};
-			var payload = await GoogleJsonWebSignature.ValidateAsync(request.IdToken, settings);
-
-			UserLoginInfo info = new UserLoginInfo(request.Provider, payload.Subject, request.Provider);
-
-		    AppUser user = 	await _userManager.FindByLoginAsync(info.LoginProvider, info.ProviderKey);
-
-			bool result = user != null;
-
-			if (user == null)
-			{
-				user = await _userManager.FindByEmailAsync(payload.Email);
-				if (user == null)
-				{
-					user = new AppUser()
-					{
-						Id = Guid.NewGuid().ToString(),
-						Email = payload.Email,
-						UserName = payload.Email,
-						FullName = payload.Name
-					};
-				    var identityResult = await _userManager.CreateAsync(user);
-					result = identityResult.Succeeded;
-				}
-
-			}
-			if (result)
-				await _userManager.AddLoginAsync(user, info);
-		//	else
-			//	throw new Exception("Invalid external authentication");
-
-			Token token = _tokenHandler.CreateAccessToken(5);
-
+			var token = await _service.GoogleLoginAsync(request.IdToken, 15);
 			return new()
 			{
 				Token = token
 			};
-
 		}
 	}
 }

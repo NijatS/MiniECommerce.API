@@ -1,7 +1,6 @@
-﻿using ECommerceAPI.Application.Exceptions;
-using ECommerceAPI.Domain.Entities.Identity;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.DTOs.User;
 using MediatR;
-using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,37 +11,28 @@ namespace ECommerceAPI.Application.Features.Commands.AppUsers.Register
 {
 	public class RegisterCommandHandler : IRequestHandler<RegisterCommandRequest, RegisterCommandResponse>
 	{
-		readonly UserManager<AppUser> _userManager;
+		readonly IUserService _service;
 
-		public RegisterCommandHandler(UserManager<AppUser> userManager)
+		public RegisterCommandHandler(IUserService service)
 		{
-			_userManager = userManager;
+			_service = service;
 		}
 
 		public async Task<RegisterCommandResponse> Handle(RegisterCommandRequest request, CancellationToken cancellationToken)
 		{
-		IdentityResult result =	await _userManager.CreateAsync(new AppUser()
-			{
-			   Id = Guid.NewGuid().ToString(),
-				UserName = request.UserName,
+		  CreateUserResponse response =	await _service.CreateAsync(new(){ 
 				Email = request.Email,
 				FullName = request.FullName,
-			},request.Password);
+				UserName = request.UserName,
+				Password = request.Password,
+				ConfirmPassword = request.ConfirmPassword,
+			});
 
-
-			RegisterCommandResponse response = new() { Succeded = result.Succeeded };
-
-			if (result.Succeeded)
-				response.Message = "User Successfully Registered ";
-			else
+			return new()
 			{
-				foreach (var error in result.Errors)
-				{
-					response.Message += $"{error.Code} - {error.Description}\n";
-
-				}
-			}
-			return response;
+				Message = response.Message,
+				Succeded = response.Succeded
+			};
 			
 		}
 	}

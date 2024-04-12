@@ -13,7 +13,8 @@ namespace ECommerceAPI.Application
 	{
 		public static void AddApplicationService(this IServiceCollection service)
 		{
-			service.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly())); ;
+			service.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+			service.AddHttpClient();
 		}
 	}
 }

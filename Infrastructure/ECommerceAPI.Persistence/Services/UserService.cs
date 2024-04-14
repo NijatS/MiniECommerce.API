@@ -19,7 +19,6 @@ namespace ECommerceAPI.Persistence.Services
 		{
 			_userManager = userManager;
 		}
-
 		public async Task<CreateUserResponse> CreateAsync(CreateUser model)
 		{
 			IdentityResult result = await _userManager.CreateAsync(new AppUser()
@@ -42,6 +41,18 @@ namespace ECommerceAPI.Persistence.Services
 				}
 			}
 			return response;
+		}
+
+		public async Task UpdateRefreshToken(string refreshToken, AppUser user, DateTime accessTokenDate,int addOnAccessToken)
+		{
+			if (user != null)
+			{
+				user.RefreshToken = refreshToken;
+				user.RefreshTokenEndDate = accessTokenDate.AddSeconds(addOnAccessToken);
+				await _userManager.UpdateAsync(user);
+			}
+			else
+			   throw new Exception("User Not Found");
 		}
 	}
 }

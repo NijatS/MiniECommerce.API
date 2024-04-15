@@ -107,3 +107,14 @@ C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\System.Management.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.MSSqlServer.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.PeriodicBatching.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.File.dll

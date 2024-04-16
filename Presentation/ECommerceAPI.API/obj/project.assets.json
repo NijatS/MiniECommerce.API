@@ -2325,6 +2325,22 @@
         "runtime": {
           "bin/placeholder/ECommerceAPI.Persistence.dll": {}
         }
+      },
+      "ECommerceAPI.SignalR/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "ECommerceAPI.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ECommerceAPI.SignalR.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerceAPI.SignalR.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5780,6 +5796,11 @@
       "type": "project",
       "path": "../../Infrastructure/ECommerceAPI.Persistence/ECommerceAPI.Persistence.csproj",
       "msbuildProject": "../../Infrastructure/ECommerceAPI.Persistence/ECommerceAPI.Persistence.csproj"
+    },
+    "ECommerceAPI.SignalR/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/ECommerceAPI.SignalR/ECommerceAPI.SignalR.csproj",
+      "msbuildProject": "../../Infrastructure/ECommerceAPI.SignalR/ECommerceAPI.SignalR.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5787,6 +5808,7 @@
       "ECommerceAPI.Application >= 1.0.0",
       "ECommerceAPI.Infrastructure >= 1.0.0",
       "ECommerceAPI.Persistence >= 1.0.0",
+      "ECommerceAPI.SignalR >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.16",
       "Microsoft.AspNetCore.OpenApi >= 7.0.16",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.17",
@@ -5831,6 +5853,9 @@
             },
             "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj": {
               "projectPath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj"
+            },
+            "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.SignalR\\ECommerceAPI.SignalR.csproj": {
+              "projectPath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.SignalR\\ECommerceAPI.SignalR.csproj"
             }
           }
         }

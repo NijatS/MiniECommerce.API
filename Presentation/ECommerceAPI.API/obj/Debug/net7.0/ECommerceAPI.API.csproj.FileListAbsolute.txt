@@ -118,3 +118,5 @@ C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.Console.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\ECommerceAPI.SignalR.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\ECommerceAPI.SignalR.pdb

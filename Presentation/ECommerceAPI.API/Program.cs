@@ -7,6 +7,8 @@ using ECommerceAPI.Infrastructure.Filters;
 using ECommerceAPI.Infrastructure.Services.Storage.Azure;
 using ECommerceAPI.Infrastructure.Services.Storage.Local;
 using ECommerceAPI.Persistence;
+using ECommerceAPI.SignalR;
+using ECommerceAPI.SignalR.Hubs;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -29,7 +31,8 @@ namespace ECommerceAPI.API
 
 			builder.Services.AddPersistanceServices();
 			builder.Services.AddInfrastructureServices();
-			builder.Services.AddApplicationService();
+			builder.Services.AddApplicationServices();
+			builder.Services.AddSignalRServices();
 
 			builder.Services.AddStorage<LocalStorage>();
 			//builder.Services.AddStorage(StorageType.Local);
@@ -37,7 +40,7 @@ namespace ECommerceAPI.API
 			builder.Services.AddControllers(option => option.Filters.Add<ValidationFilter>())
 				.AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())
 				.ConfigureApiBehaviorOptions(option => option.SuppressModelStateInvalidFilter = true);
-			builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader()));
+			builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
 
 
 			SqlColumn sqlColumn = new SqlColumn();
@@ -122,6 +125,7 @@ namespace ECommerceAPI.API
 
 			app.MapControllers();
 
+			app.MapHubs();
 			app.Run();
 		}
 	}

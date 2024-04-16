@@ -1855,3 +1855,731 @@ OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
 2024-04-16 19:39:09.827 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API) in 43.2682ms
 2024-04-16 19:39:09.838 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
 2024-04-16 19:39:09.842 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 74.0268ms
+2024-04-16 22:35:35.002 +04:00 [INF] User profile is available. Using 'C:\Users\Nijat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-16 22:35:35.165 +04:00 [INF] Now listening on: https://localhost:7135
+2024-04-16 22:35:35.167 +04:00 [INF] Now listening on: http://localhost:5167
+2024-04-16 22:35:35.170 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-16 22:35:35.173 +04:00 [INF] Hosting environment: Development
+2024-04-16 22:35:35.174 +04:00 [INF] Content root path: C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API
+2024-04-16 22:35:35.651 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - -
+2024-04-16 22:35:35.910 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - - - 200 - text/html;charset=utf-8 259.3132ms
+2024-04-16 22:35:35.934 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-16 22:35:35.941 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 5.4787ms
+2024-04-16 22:35:35.964 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - -
+2024-04-16 22:35:36.012 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.0518ms
+2024-04-16 22:35:36.114 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - -
+2024-04-16 22:35:36.280 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.0347ms
+2024-04-16 23:08:27.960 +04:00 [INF] User profile is available. Using 'C:\Users\Nijat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-16 23:08:28.409 +04:00 [INF] Now listening on: https://localhost:7135
+2024-04-16 23:08:28.412 +04:00 [INF] Now listening on: http://localhost:5167
+2024-04-16 23:08:28.415 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-16 23:08:28.416 +04:00 [INF] Hosting environment: Development
+2024-04-16 23:08:28.417 +04:00 [INF] Content root path: C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API
+2024-04-16 23:08:28.799 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - -
+2024-04-16 23:08:29.095 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - -
+2024-04-16 23:08:29.122 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - - - 200 - text/html;charset=utf-8 323.3679ms
+2024-04-16 23:08:29.122 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - - - 200 - text/html;charset=utf-8 25.2445ms
+2024-04-16 23:08:29.166 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-16 23:08:29.173 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 5.9976ms
+2024-04-16 23:08:29.187 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - -
+2024-04-16 23:08:29.222 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-16 23:08:29.229 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 6.8357ms
+2024-04-16 23:08:29.233 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - -
+2024-04-16 23:08:29.238 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.8499ms
+2024-04-16 23:08:29.250 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.1616ms
+2024-04-16 23:08:29.360 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - -
+2024-04-16 23:08:29.367 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - - - 200 - text/html;charset=utf-8 6.2313ms
+2024-04-16 23:08:29.400 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-16 23:08:29.400 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - -
+2024-04-16 23:08:29.402 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 1.8163ms
+2024-04-16 23:08:29.411 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.0228ms
+2024-04-16 23:08:29.501 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - -
+2024-04-16 23:08:29.659 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.7564ms
+2024-04-16 23:08:29.659 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - -
+2024-04-16 23:08:29.668 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4085ms
+2024-04-16 23:08:48.868 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/api/product-hub - -
+2024-04-16 23:08:48.888 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/product-hub - - - 404 0 - 20.8462ms
+2024-04-16 23:08:54.774 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-16 23:08:54.777 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 2.6647ms
+2024-04-16 23:52:20.507 +04:00 [INF] User profile is available. Using 'C:\Users\Nijat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-16 23:52:20.931 +04:00 [INF] Now listening on: https://localhost:7135
+2024-04-16 23:52:20.934 +04:00 [INF] Now listening on: http://localhost:5167
+2024-04-16 23:52:20.935 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-16 23:52:20.936 +04:00 [INF] Hosting environment: Development
+2024-04-16 23:52:20.938 +04:00 [INF] Content root path: C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API
+2024-04-16 23:52:21.460 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - -
+2024-04-16 23:52:21.903 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - - - 200 - text/html;charset=utf-8 443.4511ms
+2024-04-16 23:52:21.935 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-16 23:52:21.935 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - -
+2024-04-16 23:52:21.945 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 10.2390ms
+2024-04-16 23:52:22.378 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 442.6950ms
+2024-04-16 23:52:22.468 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - -
+2024-04-16 23:52:22.627 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 159.5263ms
+2024-04-16 23:54:53.489 +04:00 [INF] User profile is available. Using 'C:\Users\Nijat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-16 23:54:53.640 +04:00 [INF] Now listening on: https://localhost:7135
+2024-04-16 23:54:53.644 +04:00 [INF] Now listening on: http://localhost:5167
+2024-04-16 23:54:53.649 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-16 23:54:53.652 +04:00 [INF] Hosting environment: Development
+2024-04-16 23:54:53.654 +04:00 [INF] Content root path: C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API
+2024-04-16 23:54:53.796 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - -
+2024-04-16 23:54:53.988 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - - - 200 - text/html;charset=utf-8 193.9280ms
+2024-04-16 23:54:54.006 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-16 23:54:54.006 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - -
+2024-04-16 23:54:54.012 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 5.5069ms
+2024-04-16 23:54:54.037 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.0361ms
+2024-04-16 23:54:54.126 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - -
+2024-04-16 23:54:54.303 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 176.3374ms
+2024-04-17 00:02:32.851 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/RefreshToken - -
+2024-04-17 00:02:32.863 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:02:32.867 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/RefreshToken - - - 204 - - 15.9393ms
+2024-04-17 00:02:32.869 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/RefreshToken application/json 21
+2024-04-17 00:02:32.878 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:02:32.900 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.RefreshToken (ECommerceAPI.API)'
+2024-04-17 00:02:32.943 +04:00 [INF] Route matched with {action = "RefreshToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshToken(ECommerceAPI.Application.Features.Commands.AppUsers.RefreshTokenLogin.RefreshTokenLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:02:33.081 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.KeyValuePair`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]][]'.
+2024-04-17 00:02:33.098 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.RefreshToken (ECommerceAPI.API) in 149.9938ms
+2024-04-17 00:02:33.101 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.RefreshToken (ECommerceAPI.API)'
+2024-04-17 00:02:33.102 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/RefreshToken application/json 21 - 400 - application/json;+charset=utf-8 232.9689ms
+2024-04-17 00:02:38.125 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - -
+2024-04-17 00:02:38.130 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:02:38.132 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - - - 204 - - 7.3319ms
+2024-04-17 00:02:38.136 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1485
+2024-04-17 00:02:38.137 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:02:38.140 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:02:38.151 +04:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:02:39.711 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'InvoiceFile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-17 00:02:40.074 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:02:40.150 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:02:40.207 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:02:40.214 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:02:40.350 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:02:40.365 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:02:40.462 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:02:40.479 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandResponse'.
+2024-04-17 00:02:40.489 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API) in 2334.3612ms
+2024-04-17 00:02:40.492 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:02:40.501 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1485 - 200 - application/json;+charset=utf-8 2365.2396ms
+2024-04-17 00:02:59.865 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - -
+2024-04-17 00:02:59.868 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:02:59.868 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - - - 204 - - 3.2338ms
+2024-04-17 00:02:59.873 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - 0
+2024-04-17 00:02:59.875 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:02:59.879 +04:00 [INF] Executing endpoint '/products-hub/negotiate'
+2024-04-17 00:02:59.894 +04:00 [INF] Executed endpoint '/products-hub/negotiate'
+2024-04-17 00:02:59.896 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 22.9150ms
+2024-04-17 00:02:59.903 +04:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7135/products-hub?id=wn2BQ6wmm3x5V27nOEWn-Q - -
+2024-04-17 00:02:59.904 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:02:59.906 +04:00 [INF] Executing endpoint '/products-hub'
+2024-04-17 00:03:08.148 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - -
+2024-04-17 00:03:08.149 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:08.152 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - - - 204 - - 4.6350ms
+2024-04-17 00:03:08.157 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1485
+2024-04-17 00:03:08.159 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:08.161 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:03:08.165 +04:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:03:08.246 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:03:08.250 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:03:08.256 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:03:08.259 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:03:08.263 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:03:08.266 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:03:08.276 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:03:08.279 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandResponse'.
+2024-04-17 00:03:08.280 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API) in 112.1714ms
+2024-04-17 00:03:08.283 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:03:08.285 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1485 - 200 - application/json;+charset=utf-8 128.5669ms
+2024-04-17 00:03:22.896 +04:00 [INF] Executed endpoint '/products-hub'
+2024-04-17 00:03:22.898 +04:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7135/products-hub?id=wn2BQ6wmm3x5V27nOEWn-Q - - - 200 - - 22994.5424ms
+2024-04-17 00:03:24.614 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - -
+2024-04-17 00:03:24.617 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:24.618 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - - - 204 - - 4.0763ms
+2024-04-17 00:03:24.620 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - 0
+2024-04-17 00:03:24.621 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:24.623 +04:00 [INF] Executing endpoint '/products-hub/negotiate'
+2024-04-17 00:03:24.625 +04:00 [INF] Executed endpoint '/products-hub/negotiate'
+2024-04-17 00:03:24.627 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 6.9153ms
+2024-04-17 00:03:24.656 +04:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7135/products-hub?id=6sP8e7yY3mvIhQ8oN-zOOQ - -
+2024-04-17 00:03:24.657 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:24.659 +04:00 [INF] Executing endpoint '/products-hub'
+2024-04-17 00:03:42.085 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/login - -
+2024-04-17 00:03:42.088 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:42.089 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/login - - - 204 - - 4.5713ms
+2024-04-17 00:03:42.092 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/login application/json 70
+2024-04-17 00:03:42.092 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:42.093 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.Login (ECommerceAPI.API)'
+2024-04-17 00:03:42.098 +04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ECommerceAPI.Application.Features.Commands.AppUsers.Login.LoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:03:42.119 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:03:42.123 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:03:42.268 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:03:42.272 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:03:42.275 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:03:42.277 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.Login.LoginCommandSuccessResponse'.
+2024-04-17 00:03:42.278 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.Login (ECommerceAPI.API) in 177.2825ms
+2024-04-17 00:03:42.280 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.Login (ECommerceAPI.API)'
+2024-04-17 00:03:42.282 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/login application/json 70 - 200 - application/json;+charset=utf-8 190.6279ms
+2024-04-17 00:03:42.357 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:03:42.359 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:42.360 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - - - 204 - - 3.1177ms
+2024-04-17 00:03:42.365 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:03:42.368 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:03:42.451 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:03:42.457 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ECommerceAPI.API.Controllers.ProductsController (ECommerceAPI.API).
+2024-04-17 00:03:42.503 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-04-17 00:03:42.509 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-04-17 00:03:42.524 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-04-17 00:03:42.526 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-04-17 00:03:42.536 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Stock], [p].[Price], [p].[CreatedDate], [p].[UpdatedDate]
+FROM [Products] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-04-17 00:03:42.547 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API) in 87.4369ms
+2024-04-17 00:03:42.550 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:03:42.553 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 187.5169ms
+2024-04-17 00:04:01.706 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/products - -
+2024-04-17 00:04:01.709 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:01.709 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/products - - - 204 - - 3.0536ms
+2024-04-17 00:04:01.712 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/products application/json 43
+2024-04-17 00:04:01.713 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:01.715 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.ProductsController.Post (ECommerceAPI.API)'
+2024-04-17 00:04:01.719 +04:00 [INF] Route matched with {action = "Post", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ECommerceAPI.Application.Features.Commands.Product.CreateProduct.CreateProductCommandRequest) on controller ECommerceAPI.API.Controllers.ProductsController (ECommerceAPI.API).
+2024-04-17 00:04:01.848 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Double), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [CreatedDate], [Name], [Price], [Stock], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-04-17 00:04:01.856 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2024-04-17 00:04:01.857 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.ProductsController.Post (ECommerceAPI.API) in 134.5901ms
+2024-04-17 00:04:01.858 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.ProductsController.Post (ECommerceAPI.API)'
+2024-04-17 00:04:01.860 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/products application/json 43 - 201 0 - 147.5611ms
+2024-04-17 00:04:01.872 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:04:01.875 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:01.876 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - - - 204 - - 4.0305ms
+2024-04-17 00:04:01.880 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:04:01.881 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:01.883 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:04:01.884 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ECommerceAPI.API.Controllers.ProductsController (ECommerceAPI.API).
+2024-04-17 00:04:01.889 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-04-17 00:04:01.894 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-04-17 00:04:01.897 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Stock], [p].[Price], [p].[CreatedDate], [p].[UpdatedDate]
+FROM [Products] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-04-17 00:04:01.898 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API) in 12.6828ms
+2024-04-17 00:04:01.900 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:04:01.901 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 21.4879ms
+2024-04-17 00:04:07.412 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - -
+2024-04-17 00:04:07.414 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:07.414 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - - - 204 - - 2.9919ms
+2024-04-17 00:04:07.420 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - 0
+2024-04-17 00:04:07.420 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:07.421 +04:00 [INF] Executing endpoint '/products-hub/negotiate'
+2024-04-17 00:04:07.422 +04:00 [INF] Executed endpoint '/products-hub/negotiate'
+2024-04-17 00:04:07.425 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/products-hub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 5.0923ms
+2024-04-17 00:04:07.433 +04:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7135/products-hub?id=G5VFNfv_g3tpLKi17y61pw - -
+2024-04-17 00:04:07.434 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:07.435 +04:00 [INF] Executing endpoint '/products-hub'
+2024-04-17 00:04:09.362 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:04:09.364 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:09.366 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - - - 204 - - 3.6614ms
+2024-04-17 00:04:09.372 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:04:09.373 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:09.375 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:04:09.378 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ECommerceAPI.API.Controllers.ProductsController (ECommerceAPI.API).
+2024-04-17 00:04:09.396 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-04-17 00:04:09.398 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-04-17 00:04:09.402 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Stock], [p].[Price], [p].[CreatedDate], [p].[UpdatedDate]
+FROM [Products] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-04-17 00:04:09.404 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API) in 24.4446ms
+2024-04-17 00:04:09.406 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:04:09.408 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 36.0044ms
+2024-04-17 00:04:14.879 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - -
+2024-04-17 00:04:14.879 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - -
+2024-04-17 00:04:14.883 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:14.884 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:14.885 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - - - 204 - - 6.4120ms
+2024-04-17 00:04:14.887 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/google-login - - - 204 - - 8.8441ms
+2024-04-17 00:04:14.888 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492
+2024-04-17 00:04:14.890 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492
+2024-04-17 00:04:14.892 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:14.893 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:14.895 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:14.896 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:14.898 +04:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:14.899 +04:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:14.919 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:14.923 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:14.923 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:14.926 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:14.930 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API) in 25.1785ms
+2024-04-17 00:04:14.932 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API) in 29.9915ms
+2024-04-17 00:04:14.934 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:14.934 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:14.937 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid external authentication
+   at ECommerceAPI.Persistence.Services.AuthService.GoogleLoginAsync(String idToken, Int32 accessTokenLifeTime) in C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\Services\AuthService.cs:line 125
+   at ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandHandler.Handle(GoogleLoginCommandRequest request, CancellationToken cancellationToken) in C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\Features\Commands\AppUsers\GoogleLogin\GoogleLoginCommandHandler.cs:line 28
+   at ECommerceAPI.API.Controllers.AuthController.GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest) in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Controllers\AuthController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at ECommerceAPI.API.Program.<>c.<<Main>b__0_5>d.MoveNext() in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Program.cs:line 122
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-17 00:04:14.937 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid external authentication
+   at ECommerceAPI.Persistence.Services.AuthService.GoogleLoginAsync(String idToken, Int32 accessTokenLifeTime) in C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\Services\AuthService.cs:line 125
+   at ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandHandler.Handle(GoogleLoginCommandRequest request, CancellationToken cancellationToken) in C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\Features\Commands\AppUsers\GoogleLogin\GoogleLoginCommandHandler.cs:line 28
+   at ECommerceAPI.API.Controllers.AuthController.GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest) in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Controllers\AuthController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at ECommerceAPI.API.Program.<>c.<<Main>b__0_5>d.MoveNext() in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Program.cs:line 122
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-17 00:04:15.068 +04:00 [ERR] Invalid external authentication
+2024-04-17 00:04:15.071 +04:00 [ERR] Invalid external authentication
+2024-04-17 00:04:15.073 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492 - 500 - application/json 185.0076ms
+2024-04-17 00:04:15.073 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492 - 500 - application/json 183.1563ms
+2024-04-17 00:04:19.088 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492
+2024-04-17 00:04:19.088 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492
+2024-04-17 00:04:19.097 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:19.100 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:19.103 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:19.104 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:19.106 +04:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:19.106 +04:00 [INF] Route matched with {action = "GoogleLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleLogin(ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:19.111 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:19.115 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:19.120 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:19.122 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:19.124 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API) in 15.5726ms
+2024-04-17 00:04:19.125 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API) in 14.7535ms
+2024-04-17 00:04:19.126 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:19.128 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.GoogleLogin (ECommerceAPI.API)'
+2024-04-17 00:04:19.129 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid external authentication
+   at ECommerceAPI.Persistence.Services.AuthService.GoogleLoginAsync(String idToken, Int32 accessTokenLifeTime) in C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\Services\AuthService.cs:line 125
+   at ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandHandler.Handle(GoogleLoginCommandRequest request, CancellationToken cancellationToken) in C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\Features\Commands\AppUsers\GoogleLogin\GoogleLoginCommandHandler.cs:line 28
+   at ECommerceAPI.API.Controllers.AuthController.GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest) in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Controllers\AuthController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at ECommerceAPI.API.Program.<>c.<<Main>b__0_5>d.MoveNext() in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Program.cs:line 122
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-17 00:04:19.131 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Invalid external authentication
+   at ECommerceAPI.Persistence.Services.AuthService.GoogleLoginAsync(String idToken, Int32 accessTokenLifeTime) in C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\Services\AuthService.cs:line 125
+   at ECommerceAPI.Application.Features.Commands.AppUsers.GoogleLogin.GoogleLoginCommandHandler.Handle(GoogleLoginCommandRequest request, CancellationToken cancellationToken) in C:\Codes\MiniECommerce\ECommerceAPI\Core\ECommerceAPI.Application\Features\Commands\AppUsers\GoogleLogin\GoogleLoginCommandHandler.cs:line 28
+   at ECommerceAPI.API.Controllers.AuthController.GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest) in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Controllers\AuthController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at ECommerceAPI.API.Program.<>c.<<Main>b__0_5>d.MoveNext() in C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\Program.cs:line 122
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-04-17 00:04:19.138 +04:00 [ERR] Invalid external authentication
+2024-04-17 00:04:19.142 +04:00 [ERR] Invalid external authentication
+2024-04-17 00:04:19.142 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492 - 500 - application/json 53.9014ms
+2024-04-17 00:04:19.143 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/google-login application/json 1492 - 500 - application/json 54.4256ms
+2024-04-17 00:04:22.741 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/facebook-login - -
+2024-04-17 00:04:22.741 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/facebook-login - -
+2024-04-17 00:04:22.744 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:22.746 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:22.748 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/facebook-login - - - 204 - - 7.0541ms
+2024-04-17 00:04:22.749 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/facebook-login - - - 204 - - 8.1880ms
+2024-04-17 00:04:22.752 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821
+2024-04-17 00:04:22.753 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821
+2024-04-17 00:04:22.753 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:22.754 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:22.755 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:22.755 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:22.758 +04:00 [INF] Route matched with {action = "FacebookLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FacebookLogin(ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:22.759 +04:00 [INF] Route matched with {action = "FacebookLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FacebookLogin(ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:22.773 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:22.773 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:22.775 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:22.776 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:23.083 +04:00 [INF] Received HTTP response headers after 302.6727ms - 200
+2024-04-17 00:04:23.087 +04:00 [INF] Received HTTP response headers after 308.9352ms - 200
+2024-04-17 00:04:23.090 +04:00 [INF] End processing HTTP request after 317.9569ms - 200
+2024-04-17 00:04:23.088 +04:00 [INF] End processing HTTP request after 316.4172ms - 200
+2024-04-17 00:04:23.098 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:23.098 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:23.100 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:23.101 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:23.336 +04:00 [INF] Received HTTP response headers after 233.9654ms - 200
+2024-04-17 00:04:23.339 +04:00 [INF] Received HTTP response headers after 234.7703ms - 200
+2024-04-17 00:04:23.339 +04:00 [INF] End processing HTTP request after 241.7154ms - 200
+2024-04-17 00:04:23.340 +04:00 [INF] End processing HTTP request after 242.4396ms - 200
+2024-04-17 00:04:23.343 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:23.343 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:23.344 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:23.346 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:23.546 +04:00 [INF] Received HTTP response headers after 197.1195ms - 200
+2024-04-17 00:04:23.549 +04:00 [INF] End processing HTTP request after 206.5077ms - 200
+2024-04-17 00:04:23.553 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:23.555 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:23.557 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:23.560 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:23.560 +04:00 [INF] Received HTTP response headers after 212.492ms - 200
+2024-04-17 00:04:23.564 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:04:23.564 +04:00 [INF] End processing HTTP request after 221.5217ms - 200
+2024-04-17 00:04:23.568 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:23.569 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:23.572 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:04:23.573 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:23.575 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandResponse'.
+2024-04-17 00:04:23.577 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:23.578 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API) in 817.6758ms
+2024-04-17 00:04:23.581 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:23.582 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:23.586 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:04:23.586 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821 - 200 - application/json;+charset=utf-8 834.4651ms
+2024-04-17 00:04:23.590 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:23.593 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:04:23.596 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandResponse'.
+2024-04-17 00:04:23.600 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API) in 837.8377ms
+2024-04-17 00:04:23.602 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:23.605 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821 - 200 - application/json;+charset=utf-8 852.2664ms
+2024-04-17 00:04:23.610 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:04:23.612 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:23.614 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/products?page=0&size=5 - - - 204 - - 4.1739ms
+2024-04-17 00:04:23.623 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - -
+2024-04-17 00:04:23.624 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:23.625 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:04:23.627 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ECommerceAPI.API.Controllers.ProductsController (ECommerceAPI.API).
+2024-04-17 00:04:23.633 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-04-17 00:04:23.637 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-04-17 00:04:23.639 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Stock], [p].[Price], [p].[CreatedDate], [p].[UpdatedDate]
+FROM [Products] AS [p]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-04-17 00:04:23.642 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API) in 11.7065ms
+2024-04-17 00:04:23.644 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-17 00:04:23.645 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/products?page=0&size=5 - - - 200 - application/json;+charset=utf-8 22.8045ms
+2024-04-17 00:04:29.339 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/facebook-login - -
+2024-04-17 00:04:29.341 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:29.341 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/facebook-login - - - 204 - - 2.6512ms
+2024-04-17 00:04:29.345 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821
+2024-04-17 00:04:29.346 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:29.346 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:29.347 +04:00 [INF] Route matched with {action = "FacebookLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FacebookLogin(ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:29.353 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:29.354 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:29.526 +04:00 [INF] Received HTTP response headers after 171.5062ms - 200
+2024-04-17 00:04:29.530 +04:00 [INF] End processing HTTP request after 177.5006ms - 200
+2024-04-17 00:04:29.533 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:29.537 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:29.742 +04:00 [INF] Received HTTP response headers after 202.5717ms - 200
+2024-04-17 00:04:29.745 +04:00 [INF] End processing HTTP request after 211.9947ms - 200
+2024-04-17 00:04:29.748 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:29.751 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:29.983 +04:00 [INF] Received HTTP response headers after 228.2139ms - 200
+2024-04-17 00:04:29.986 +04:00 [INF] End processing HTTP request after 237.9206ms - 200
+2024-04-17 00:04:29.988 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:29.991 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:29.993 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:29.995 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:29.999 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:04:30.002 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:30.008 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:04:30.012 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandResponse'.
+2024-04-17 00:04:30.013 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API) in 663.0361ms
+2024-04-17 00:04:30.016 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:30.019 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821 - 200 - application/json;+charset=utf-8 673.7997ms
+2024-04-17 00:04:32.792 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821
+2024-04-17 00:04:32.794 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:32.795 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:32.796 +04:00 [INF] Route matched with {action = "FacebookLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FacebookLogin(ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:32.797 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:32.799 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/oauth/access_token?client_id=926948432489692&client_secret=b3a8a5805d70eb667f9060ce168ca20e&grant_type=client_credentials
+2024-04-17 00:04:32.971 +04:00 [INF] Received HTTP response headers after 168.6322ms - 200
+2024-04-17 00:04:32.974 +04:00 [INF] End processing HTTP request after 176.3042ms - 200
+2024-04-17 00:04:32.975 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:32.975 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/debug_token?input_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD&access_token=926948432489692%7CD7v6cGVeCRcA5EmnqRGKu3xSR1c
+2024-04-17 00:04:33.171 +04:00 [INF] Received HTTP response headers after 194.8373ms - 200
+2024-04-17 00:04:33.175 +04:00 [INF] End processing HTTP request after 199.9986ms - 200
+2024-04-17 00:04:33.175 +04:00 [INF] Start processing HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:33.176 +04:00 [INF] Sending HTTP request GET https://graph.facebook.com/me?fields=email,name&access_token=EAANLDgALLNwBO4tLhDB6vpOcy9YZCU1Q7DPtNJkpAZAvu5O2uLTwZCV6y1jZBBjUt0ZAcztKIN2wFJu13LH545JfXIrJbJpCZAtOiIsl2IGfa7eP8fKdoKYTgWZAL3FkD2fbiKqchjx3eDUR3xdPvbu4OblkwSUOR4ZATr9ZALnZBkIL2pxoMMoV2CENv4w2SVipMBbq3y2zIS6Vb4KsP29oP7cIYCi4BTd4yOsAZDZD
+2024-04-17 00:04:33.394 +04:00 [INF] Received HTTP response headers after 216.1138ms - 200
+2024-04-17 00:04:33.399 +04:00 [INF] End processing HTTP request after 223.1777ms - 200
+2024-04-17 00:04:33.402 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:33.405 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:33.407 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
+FROM [AspNetUserLogins] AS [a]
+WHERE [a].[LoginProvider] = @__loginProvider_0 AND [a].[ProviderKey] = @__providerKey_1
+2024-04-17 00:04:33.411 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__userId_0
+2024-04-17 00:04:33.414 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:04:33.418 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:33.425 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:04:33.428 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.FacebookLogin.FacebookLoginCommandResponse'.
+2024-04-17 00:04:33.429 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API) in 632.1922ms
+2024-04-17 00:04:33.431 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.FacebookLogin (ECommerceAPI.API)'
+2024-04-17 00:04:33.433 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/facebook-login application/json 821 - 200 - application/json;+charset=utf-8 641.0579ms
+2024-04-17 00:04:35.494 +04:00 [INF] Executed endpoint '/products-hub'
+2024-04-17 00:04:35.497 +04:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7135/products-hub?id=G5VFNfv_g3tpLKi17y61pw - - - 200 - - 28064.0091ms
+2024-04-17 00:04:44.311 +04:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7135/api/auth/login - -
+2024-04-17 00:04:44.313 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:44.314 +04:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7135/api/auth/login - - - 204 - - 2.5504ms
+2024-04-17 00:04:44.317 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7135/api/auth/login application/json 70
+2024-04-17 00:04:44.318 +04:00 [INF] CORS policy execution successful.
+2024-04-17 00:04:44.318 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.AuthController.Login (ECommerceAPI.API)'
+2024-04-17 00:04:44.320 +04:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ECommerceAPI.Application.Features.Commands.AppUsers.Login.LoginCommandRequest) on controller ECommerceAPI.API.Controllers.AuthController (ECommerceAPI.API).
+2024-04-17 00:04:44.325 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:04:44.329 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:44.404 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-04-17 00:04:44.410 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RefreshToken], [a].[RefreshTokenEndDate], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-04-17 00:04:44.413 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[@p17='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p18='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = DateTime2), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FullName] = @p4, [LockoutEnabled] = @p5, [LockoutEnd] = @p6, [NormalizedEmail] = @p7, [NormalizedUserName] = @p8, [PasswordHash] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [RefreshToken] = @p12, [RefreshTokenEndDate] = @p13, [SecurityStamp] = @p14, [TwoFactorEnabled] = @p15, [UserName] = @p16
+OUTPUT 1
+WHERE [Id] = @p17 AND [ConcurrencyStamp] = @p18;
+2024-04-17 00:04:44.415 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Commands.AppUsers.Login.LoginCommandSuccessResponse'.
+2024-04-17 00:04:44.416 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.AuthController.Login (ECommerceAPI.API) in 94.1491ms
+2024-04-17 00:04:44.419 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.AuthController.Login (ECommerceAPI.API)'
+2024-04-17 00:04:44.420 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7135/api/auth/login application/json 70 - 200 - application/json;+charset=utf-8 103.2820ms

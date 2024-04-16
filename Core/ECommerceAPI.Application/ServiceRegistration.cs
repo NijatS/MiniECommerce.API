@@ -11,7 +11,7 @@ namespace ECommerceAPI.Application
 {
 	public static class ServiceRegistration
 	{
-		public static void AddApplicationService(this IServiceCollection service)
+		public static void AddApplicationServices(this IServiceCollection service)
 		{
 			service.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 			service.AddHttpClient();

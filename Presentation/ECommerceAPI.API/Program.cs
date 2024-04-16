@@ -1,4 +1,5 @@
 using ECommerceAPI.API.Configurations.ColumnWriters;
+using ECommerceAPI.API.Extensions;
 using ECommerceAPI.Application;
 using ECommerceAPI.Application.Validators.Products;
 using ECommerceAPI.Infrastructure;
@@ -8,8 +9,6 @@ using ECommerceAPI.Infrastructure.Services.Storage.Local;
 using ECommerceAPI.Persistence;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using Serilog.Context;
@@ -70,9 +69,6 @@ namespace ECommerceAPI.API
 	.MinimumLevel.Information()
 	.CreateLogger();
 
-
-
-
 			builder.Host.UseSerilog(log);
 
 			builder.Services.AddEndpointsApiExplorer();
@@ -103,6 +99,8 @@ namespace ECommerceAPI.API
 				app.UseSwagger();
 				app.UseSwaggerUI();
 			}
+
+			app.ConfigureExceptionHandler(app.Services.GetRequiredService<ILogger<Program>>());
 			app.UseStaticFiles();
 			app.UseSerilogRequestLogging();
 

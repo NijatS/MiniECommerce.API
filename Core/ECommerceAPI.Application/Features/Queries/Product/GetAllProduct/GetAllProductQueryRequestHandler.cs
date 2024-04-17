@@ -1,6 +1,7 @@
 ﻿using ECommerceAPI.Application.Repositories;
 using ECommerceAPI.Application.RequestParametrs;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,9 @@ namespace ECommerceAPI.Application.Features.Queries.Product.GetAllProduct
         }
         public async Task<GetAllProductQueryResponse> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
         {
-            var totalCount = _productReadRepository.GetAll(false).Count();
+            var totalProductCount = _productReadRepository.GetAll(false).Count();
             var products = _productReadRepository.GetAll(false)
+                .Include(p => p.ProductImageFiles)
                 .Select(
                 p => new
                 {
@@ -28,15 +30,16 @@ namespace ECommerceAPI.Application.Features.Queries.Product.GetAllProduct
                     p.Stock,
                     p.Price,
                     p.CreatedDate,
-                    p.UpdatedDate
+                    p.UpdatedDate,
+                    p.ProductImageFiles
                 })
                 .Skip(request.Page * request.Size)
                 .Take(request.Size);
             return new()
             {
                 Products = products,
-                TotalCount = totalCount
-            };
+                TotalCount = totalProductCount
+			};
         }
     }
 }

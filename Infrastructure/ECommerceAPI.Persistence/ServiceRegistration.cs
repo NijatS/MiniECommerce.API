@@ -56,8 +56,15 @@ namespace ECommerceAPI.Persistence
 			service.AddScoped<IInvoiceFileReadRepository, InvoiceFileReadRepository>();
 			service.AddScoped<IInvoiceFileWriteRepository, InvoiceFileWriteRepository>();
 
+			service.AddScoped<IBasketReadRepository, BasketReadRepository>();
+			service.AddScoped<IBasketWriteRepository, BasketWriteRepository>();
+
+			service.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>();
+			service.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
+
 			service.AddScoped<IUserService,UserService>();
 			service.AddScoped<IAuthService, AuthService>();
+
 			service.AddScoped<IExternalAuthentication, AuthService>();
 			service.AddScoped<IInternalAuthentication, AuthService>();
 

@@ -22,6 +22,8 @@ namespace ECommerceAPI.Persistence.Contexts
 		public DbSet<Domain.Entities.File> Files { get; set; }
 		public DbSet<ProductImageFile> ProductImageFiles { get; set; }
 		public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+		public DbSet<Basket> Basket { get; set; }
+		public DbSet<BasketItem> BasketItems { get; set; }
 		public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
 		{
 			var datas = ChangeTracker.Entries<BaseEntity>();
@@ -38,6 +40,19 @@ namespace ECommerceAPI.Persistence.Contexts
 				}
 			}
 			return base.SaveChangesAsync(cancellationToken);
+		}
+		protected override void OnModelCreating(ModelBuilder builder)
+		{
+			builder.Entity<Order>()
+				.HasKey(b => b.Id);
+
+			builder.Entity<Basket>()
+				.HasOne(b => b.Order)
+				.WithOne(o => o.Basket)
+				.HasForeignKey<Order>(o => o.Id);
+
+			base.OnModelCreating(builder);
+
 		}
 	}
 }

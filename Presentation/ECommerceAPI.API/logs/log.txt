@@ -10870,3 +10870,63 @@ ORDER BY [t].[Id], [t0].[ProductImageFilesId], [t0].[ProductsId]
 2024-04-18 23:33:46.295 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.3296ms
 2024-04-18 23:33:46.517 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - -
 2024-04-18 23:33:46.545 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 27.9495ms
+2024-04-19 23:36:29.317 +04:00 [INF] User profile is available. Using 'C:\Users\Nijat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-19 23:36:30.886 +04:00 [INF] Now listening on: https://localhost:7135
+2024-04-19 23:36:30.889 +04:00 [INF] Now listening on: http://localhost:5167
+2024-04-19 23:36:30.893 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-19 23:36:30.895 +04:00 [INF] Hosting environment: Development
+2024-04-19 23:36:30.896 +04:00 [INF] Content root path: C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API
+2024-04-19 23:37:19.747 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/index.html - -
+2024-04-19 23:37:20.505 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/index.html - - - 200 - text/html;charset=utf-8 765.0619ms
+2024-04-19 23:37:20.607 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - -
+2024-04-19 23:37:20.607 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/_vs/browserLink - -
+2024-04-19 23:37:20.620 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_framework/aspnetcore-browser-refresh.js - - - 200 13768 application/javascript;+charset=utf-8 12.2771ms
+2024-04-19 23:37:20.814 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 206.3422ms
+2024-04-19 23:37:21.299 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - -
+2024-04-19 23:37:21.743 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 443.9671ms
+2024-04-19 23:48:31.810 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/api/files/getBaseStorageUrl - -
+2024-04-19 23:48:31.819 +04:00 [INF] CORS policy execution successful.
+2024-04-19 23:48:31.836 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.FilesController.GetBaseStorageUrl (ECommerceAPI.API)'
+2024-04-19 23:48:31.866 +04:00 [INF] Route matched with {action = "GetBaseStorageUrl", controller = "Files"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBaseStorageUrl() on controller ECommerceAPI.API.Controllers.FilesController (ECommerceAPI.API).
+2024-04-19 23:48:31.877 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-19 23:48:31.889 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.FilesController.GetBaseStorageUrl (ECommerceAPI.API) in 14.9818ms
+2024-04-19 23:48:31.891 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.FilesController.GetBaseStorageUrl (ECommerceAPI.API)'
+2024-04-19 23:48:31.894 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/files/getBaseStorageUrl - - - 200 - application/json;+charset=utf-8 84.1748ms
+2024-04-19 23:48:31.901 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135/api/products?page=0&size=10 - -
+2024-04-19 23:48:31.904 +04:00 [INF] CORS policy execution successful.
+2024-04-19 23:48:31.907 +04:00 [INF] Executing endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-19 23:48:31.918 +04:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ECommerceAPI.API.Controllers.ProductsController (ECommerceAPI.API).
+2024-04-19 23:48:33.008 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'InvoiceFile'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-04-19 23:48:33.344 +04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2024-04-19 23:48:33.365 +04:00 [INF] Executing OkObjectResult, writing value of type 'ECommerceAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2024-04-19 23:48:33.414 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-04-19 23:48:33.417 +04:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-04-19 23:48:33.561 +04:00 [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[Stock], [t].[Price], [t].[CreatedDate], [t].[UpdatedDate], [t0].[Id], [t0].[CreatedDate], [t0].[Discriminator], [t0].[FileName], [t0].[Path], [t0].[Storage], [t0].[Showcase], [t0].[ProductImageFilesId], [t0].[ProductsId]
+FROM (
+    SELECT [p].[Id], [p].[Name], [p].[Stock], [p].[Price], [p].[CreatedDate], [p].[UpdatedDate]
+    FROM [Products] AS [p]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN (
+    SELECT [t1].[Id], [t1].[CreatedDate], [t1].[Discriminator], [t1].[FileName], [t1].[Path], [t1].[Storage], [t1].[Showcase], [p0].[ProductImageFilesId], [p0].[ProductsId]
+    FROM [ProductProductImageFile] AS [p0]
+    INNER JOIN (
+        SELECT [f].[Id], [f].[CreatedDate], [f].[Discriminator], [f].[FileName], [f].[Path], [f].[Storage], [f].[Showcase]
+        FROM [Files] AS [f]
+        WHERE [f].[Discriminator] = N'ProductImageFile'
+    ) AS [t1] ON [p0].[ProductImageFilesId] = [t1].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ProductsId]
+ORDER BY [t].[Id], [t0].[ProductImageFilesId], [t0].[ProductsId]
+2024-04-19 23:48:33.646 +04:00 [INF] Executed action ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API) in 1725.1674ms
+2024-04-19 23:48:33.652 +04:00 [INF] Executed endpoint 'ECommerceAPI.API.Controllers.ProductsController.Get (ECommerceAPI.API)'
+2024-04-19 23:48:33.663 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135/api/products?page=0&size=10 - - - 200 - application/json;+charset=utf-8 1762.0349ms
+2024-04-19 23:48:33.678 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135//resource/products/iPhone-X-2.jpg - -
+2024-04-19 23:48:33.678 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7135//resource/products/Apple-iPhone-15-Pro-lineup-hero-230912-jpg-newsapped.jpg - -
+2024-04-19 23:48:33.718 +04:00 [INF] The file //resource/products/Apple-iPhone-15-Pro-lineup-hero-230912-jpg-newsapped.jpg was not modified
+2024-04-19 23:48:33.718 +04:00 [INF] The file //resource/products/iPhone-X-2.jpg was not modified
+2024-04-19 23:48:33.722 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135//resource/products/Apple-iPhone-15-Pro-lineup-hero-230912-jpg-newsapped.jpg - - - 304 - image/jpeg 44.3717ms
+2024-04-19 23:48:33.726 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7135//resource/products/iPhone-X-2.jpg - - - 304 - image/jpeg 47.4576ms

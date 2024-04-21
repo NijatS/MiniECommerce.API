@@ -41,7 +41,7 @@ namespace ECommerceAPI.Persistence.Services
 			if (basket != null)
 			{
 				BasketItem _basketItem = await _basketItemReadRepository.GetSingleAsync(bi => bi.BasketId == basket.Id && bi.ProductId == Guid.Parse(basketItem.ProductId));
-				if (basketItem != null)
+				if (_basketItem != null)
 					_basketItem.Quantity++;
 				else
 					await _basketItemWriteRepository.AddAsync(new()
@@ -60,11 +60,17 @@ namespace ECommerceAPI.Persistence.Services
 			Basket? basket = await ContextUser();
 			Basket? result = await _basketReadRepository.Table
 				.Include(b => b.BasketItems)
-				 .ThenInclude(bi => bi.ProductId)
+				 .ThenInclude(bi => bi.Product)
 				  .FirstOrDefaultAsync(b => b.Id == basket.Id);
 
 			return result.BasketItems.ToList();
 
+		}
+
+		public async Task<Basket> GetUserActiveBasketAsync()
+		{
+			Basket? basket = await ContextUser();
+			return basket;
 		}
 
 		public async Task RemoveBasketItemAsync(string basketItemId)

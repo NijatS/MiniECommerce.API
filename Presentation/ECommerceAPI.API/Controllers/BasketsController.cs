@@ -27,7 +27,7 @@ namespace ECommerceAPI.API.Controllers
 			return Ok(response);
 		}
 		[HttpPost]
-		public async Task<IActionResult> AddItemToBasket(AddItemToBasketCommandRequest request)
+		public async Task<IActionResult> AddItemToBasket([FromBody]AddItemToBasketCommandRequest request)
 		{
 			AddItemToBasketCommandResponse response = await _mediator.Send(request);
 			return Ok(response);

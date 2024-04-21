@@ -1,3 +1,9 @@
+C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.csproj.AssemblyReference.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.AssemblyInfoInputs.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.AssemblyInfo.cs
+C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.csproj.CoreCompileInputs.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.sourcelink.json
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net7.0\ECommerceAPI.Persistence.deps.json
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net7.0\ECommerceAPI.Persistence.runtimeconfig.json
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net7.0\ECommerceAPI.Persistence.dll
@@ -6,12 +12,6 @@ C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net7.0\ECommerceAPI.Domain.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net7.0\ECommerceAPI.Application.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\bin\Debug\net7.0\ECommerceAPI.Domain.pdb
-C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.csproj.AssemblyReference.cache
-C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
-C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.AssemblyInfoInputs.cache
-C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.AssemblyInfo.cs
-C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.csproj.CoreCompileInputs.cache
-C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.sourcelink.json
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerc.A54A3D56.Up2Date
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.dll
 C:\Codes\MiniECommerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\refint\ECommerceAPI.Persistence.dll

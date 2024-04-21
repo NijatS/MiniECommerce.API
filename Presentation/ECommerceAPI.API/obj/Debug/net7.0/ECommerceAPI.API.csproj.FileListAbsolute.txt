@@ -1,3 +1,10 @@
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.csproj.AssemblyReference.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.AssemblyInfoInputs.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.AssemblyInfo.cs
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.csproj.CoreCompileInputs.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.sourcelink.json
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\appsettings.Development.json
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\appsettings.json
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\ECommerceAPI.API.staticwebassets.runtime.json
@@ -98,14 +105,6 @@ C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\ECommerceAPI.Persistence.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\ECommerceAPI.SignalR.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\ECommerceAPI.Domain.pdb
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.csproj.AssemblyReference.cache
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.AssemblyInfoInputs.cache
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.AssemblyInfo.cs
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.csproj.CoreCompileInputs.cache
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.sourcelink.json
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\staticwebassets.build.json
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\staticwebassets.development.json
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\staticwebassets\msbuild.ECommerceAPI.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -120,3 +119,4 @@ C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.pdb
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.genruntimeconfig.cache
 C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ref\ECommerceAPI.API.dll
+C:\Codes\MiniECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.MvcApplicationPartsAssemblyInfo.cs

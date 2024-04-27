@@ -1,4 +1,5 @@
 ﻿using ECommerceAPI.Application.DTOs.Order;
+using ECommerceAPI.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace ECommerceAPI.Application.Abstractions.Services
 	{
 		Task CreateOrderAsync(CreateOrder createOrder);
 		Task<ListOrder> GetAllOrdersAsync(int page,int size);
+		Task<SingleOrder> GetOrderByIdAsync(string id);
 	}
 }

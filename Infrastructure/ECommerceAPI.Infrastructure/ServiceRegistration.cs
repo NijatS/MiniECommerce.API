@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Abstractions.Storage;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.Abstractions.Storage;
 using ECommerceAPI.Application.Abstractions.Storage.Azure;
 using ECommerceAPI.Application.Abstractions.Token;
 using ECommerceAPI.Infrastructure.Enums;
@@ -21,6 +22,7 @@ namespace ECommerceAPI.Infrastructure
 		{
 			services.AddScoped<IStorageService, StorageService>();
 			services.AddScoped<ITokenHandler, TokenHandler>();
+			services.AddScoped<IMailService, MailService>();
 
 		}
 		public static void AddStorage<T>(this IServiceCollection services) where T:Storage,IStorage

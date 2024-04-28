@@ -26,7 +26,7 @@ namespace ECommerceAPI.API.Controllers
 		[HttpGet]
 		public async Task<IActionResult> ExampleMail()
 		{
-			await _mailService.SendMessageAsync("nijatsoltanli03@gmail.com", "Test Mail","salam salam", false);
+			await _mailService.SendMailAsync("nijatsoltanli03@gmail.com", "Test Mail","salam salam", false);
 			return Ok();
 		}
 	}

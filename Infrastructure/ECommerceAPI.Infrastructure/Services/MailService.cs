@@ -20,12 +20,12 @@ namespace ECommerceAPI.Infrastructure.Services
 			_configuration = configuration;
 		}
 
-		public async Task SendMessageAsync(string to, string subject, string body, bool isBodyHtml = true)
+		public async Task SendMailAsync(string to, string subject, string body, bool isBodyHtml = true)
 		{
-			await SendMessageAsync(new[] { to }, subject, body, isBodyHtml);
+			await SendMailAsync(new[] { to }, subject, body, isBodyHtml);
 		}
 
-		public async Task SendMessageAsync(string[] toes, string subject, string body, bool isBodyHtml = true)
+		public async Task SendMailAsync(string[] toes, string subject, string body, bool isBodyHtml = true)
 		{
 			MailMessage message = new();
 			message.Subject = subject;
@@ -46,6 +46,18 @@ namespace ECommerceAPI.Infrastructure.Services
 
 			await smtp.SendMailAsync(message);
 
+		}
+
+		public async Task SendPasswordResetMailAsync(string to,string userId,string resetToken)
+		{
+			string mail = @"Hello<br>If you want to reset password, please click on the link below." +
+				"<br><strong><a target='_blank' href=";
+
+			mail += _configuration["AngularClientUrl"] + "/update-password/" + userId + "/" + resetToken;
+
+			mail += ">Click this link...</a></strong><br><br><span style=\"font-size:12px;\">If this request has not been fulfilled by you, please do not take this e-mail seriously.</span><br>Best Regards... <br><br><br>NJ ECommerce";
+
+			await SendMailAsync(to, "Reset Password", mail, true);
 		}
 	}
 }

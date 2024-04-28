@@ -8,6 +8,7 @@ using ECommerceAPI.Persistence.Contexts;
 using ECommerceAPI.Persistence.Repositories;
 using ECommerceAPI.Persistence.Repositories.File;
 using ECommerceAPI.Persistence.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -35,7 +36,7 @@ namespace ECommerceAPI.Persistence
 				options.User.RequireUniqueEmail = true;
 			}
 				
-				).AddEntityFrameworkStores<ECommerceAPIDbContext>();
+				).AddEntityFrameworkStores<ECommerceAPIDbContext>().AddDefaultTokenProviders();
 
 			service.AddScoped<ICustomerReadRepository,CustomerReadRepository>();
 			service.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
@@ -71,7 +72,6 @@ namespace ECommerceAPI.Persistence
 			service.AddScoped<IBasketService, BasketService>();
 
 			service.AddScoped<IOrderService,OrderService>();
-
 
 		}
 	}

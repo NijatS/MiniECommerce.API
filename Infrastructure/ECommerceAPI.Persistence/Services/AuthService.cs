@@ -9,6 +9,7 @@ using ECommerceAPI.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -29,7 +30,8 @@ namespace ECommerceAPI.Persistence.Services
 		readonly ITokenHandler _tokenHandler;
 		readonly SignInManager<AppUser> _signInManager;
 		readonly IUserService _userService;
-		public AuthService(IHttpClientFactory httpClient, IConfiguration configuration, UserManager<AppUser> userManager, ITokenHandler tokenHandler, SignInManager<AppUser> signInManager, IUserService userService)
+		readonly IMailService _mailService;
+		public AuthService(IHttpClientFactory httpClient, IConfiguration configuration, UserManager<AppUser> userManager, ITokenHandler tokenHandler, SignInManager<AppUser> signInManager, IUserService userService, IMailService mailService)
 		{
 			_httpClient = httpClient.CreateClient();
 			_configuration = configuration;
@@ -37,6 +39,7 @@ namespace ECommerceAPI.Persistence.Services
 			_tokenHandler = tokenHandler;
 			_signInManager = signInManager;
 			_userService = userService;
+			_mailService = mailService;
 		}
 		public async Task<Token> FacebookLoginAsync(string authToken, int accessTokenLifeTime)
 		{
@@ -154,6 +157,19 @@ namespace ECommerceAPI.Persistence.Services
 			throw new UnauthorizedAccessException("User Not found");
 		}
 
+		public async Task PasswordResetAsync(string email)
+		{
+			AppUser? user = await _userManager.FindByEmailAsync(email);
+
+			if (user != null)
+			{
+				string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+				byte[] tokenByte = Encoding.UTF8.GetBytes(resetToken);
+				resetToken = WebEncoders.Base64UrlEncode(tokenByte);
+
+				await _mailService.SendPasswordResetMailAsync(email,user.Id,resetToken);
+			}
+		}
 		public async Task<Token> RefreshTokenLoginAsync(string refreshToken)
 		{
 			AppUser? user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
@@ -164,6 +180,19 @@ namespace ECommerceAPI.Persistence.Services
 				return token;
 			}
 			throw new NotFoundUserException();
+		}
+
+		public async Task<bool> VerifyResetToken(string resetToken, string userId)
+		{
+			AppUser? user = await _userManager.FindByIdAsync(userId);
+			if(user != null)
+			{
+				byte[] tokenBytes = WebEncoders.Base64UrlDecode(resetToken);
+				resetToken = Encoding.UTF8.GetString(tokenBytes);
+
+				return await _userManager.VerifyUserTokenAsync(user, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetToken", resetToken);
+			}
+			return false;
 		}
 	}
 }

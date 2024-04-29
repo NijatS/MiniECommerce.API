@@ -63,6 +63,9 @@ namespace ECommerceAPI.Persistence
 			service.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>();
 			service.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
 
+			service.AddScoped<ICompletedOrderWriteRepository, CompletedOrderWriteRepository>();
+			service.AddScoped<ICompletedOrderReadRepository, CompletedOrderReadRepository>();
+
 			service.AddScoped<IUserService,UserService>();
 			service.AddScoped<IAuthService, AuthService>();
 
@@ -70,7 +73,6 @@ namespace ECommerceAPI.Persistence
 			service.AddScoped<IInternalAuthentication, AuthService>();
 
 			service.AddScoped<IBasketService, BasketService>();
-
 			service.AddScoped<IOrderService,OrderService>();
 
 		}

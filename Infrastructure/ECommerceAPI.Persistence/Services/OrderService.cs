@@ -2,6 +2,7 @@
 using ECommerceAPI.Application.Abstractions.Services;
 using ECommerceAPI.Application.DTOs.Order;
 using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,11 +16,15 @@ namespace ECommerceAPI.Persistence.Services
 	{
 		readonly IOrderWriteRepository _orderWriteRepository;
 		readonly IOrderReadRepository _orderReadRepository;
+		readonly ICompletedOrderWriteRepository _completedOrderWriteRepository;
+		readonly ICompletedOrderReadRepository _completedOrderReadRepository;
 
-		public OrderService(IOrderWriteRepository orderWriteRepository, IOrderReadRepository orderReadRepository)
+		public OrderService(IOrderWriteRepository orderWriteRepository, IOrderReadRepository orderReadRepository, ICompletedOrderWriteRepository completedOrderWriteRepository, ICompletedOrderReadRepository completedOrderReadRepository)
 		{
 			_orderWriteRepository = orderWriteRepository;
 			_orderReadRepository = orderReadRepository;
+			_completedOrderWriteRepository = completedOrderWriteRepository;
+			_completedOrderReadRepository = completedOrderReadRepository;
 		}
 
 		public async Task CreateOrderAsync(CreateOrder createOrder)
@@ -47,15 +52,30 @@ namespace ECommerceAPI.Persistence.Services
 			var data = query.Skip(page * size)
 				.Take(size);
 
+
+			var data2 = from order in data
+				   join completedOrder in _completedOrderReadRepository.Table
+				   on order.Id equals completedOrder.OrderId into co
+				   from _co in co.DefaultIfEmpty()
+				   select new
+				   {
+					   order.CreatedDate,
+					   order.OrderCode,
+					   order.Basket,
+					   order.Id,
+					   Completed = _co != null ? true : false,
+				   };
+
 			return new()
 			{
 				TotalCount = await query.CountAsync(),
-				Orders = await data.Select(o=> new {
+				Orders = await data2.Select(o=> new {
 					Id = o.Id,
 					CreatedDate = o.CreatedDate,
 					OrderCode = o.OrderCode,
 					TotalPrice = (float)o.Basket.BasketItems.Sum(bi => bi.Product.Price * bi.Quantity),
-					UserName = o.Basket.AppUser.UserName
+					UserName = o.Basket.AppUser.UserName,
+					Completed = o.Completed
 				}).ToListAsync(),
 
 			};
@@ -65,26 +85,55 @@ namespace ECommerceAPI.Persistence.Services
 
 		public async Task<SingleOrder> GetOrderByIdAsync(string id)
 		{
-			var data = await _orderReadRepository.Table
+			var data =  _orderReadRepository.Table
 				.Include(o => o.Basket)
 				 .ThenInclude(b => b.BasketItems)
-				  .ThenInclude(bi => bi.Product)
-				    .FirstOrDefaultAsync(o => o.Id == Guid.Parse(id));
+				  .ThenInclude(bi => bi.Product);
+
+			var data2 =await (from order in data
+						 join completedOrder in _completedOrderReadRepository.Table
+						 on order.Id equals completedOrder.OrderId into co
+						 from _co in co.DefaultIfEmpty()
+						 select new
+						 {
+							 order.CreatedDate,
+							 order.OrderCode,
+							 order.Basket,
+							 order.Id,
+							 order.Address,
+							 order.Description,
+							 Completed = _co != null ? true : false,
+						 }).FirstOrDefaultAsync(o => o.Id == Guid.Parse(id));
 
 			return new()
 			{
-				Id = data.Id.ToString(),
-				CreatedDate = data.CreatedDate,
-				OrderCode = data.OrderCode,
-				BasketItems = data.Basket.BasketItems.Select(bi => new
+				Id = data2.Id.ToString(),
+				CreatedDate = data2.CreatedDate,
+				OrderCode = data2.OrderCode,
+				BasketItems = data2.Basket.BasketItems.Select(bi => new
 				{
 					bi.Product.Name,
 					bi.Product.Price,
 					bi.Quantity
 				}),
-				Address = data.Address,
-				Description = data.Description,
+				Address = data2.Address,
+				Description = data2.Description,
+				Completed = data2.Completed
 			};
 		}
+		public async Task CompleteOrderAsync(string id)
+		{
+			Order order = await _orderReadRepository.GetByIdAsync(id);
+
+			if (order != null)
+			{
+				await _completedOrderWriteRepository.AddAsync(new()
+				{
+					OrderId = Guid.Parse(id),
+				});
+				await _completedOrderWriteRepository.SaveAsync();
+			}
+		}
+
 	}
 }

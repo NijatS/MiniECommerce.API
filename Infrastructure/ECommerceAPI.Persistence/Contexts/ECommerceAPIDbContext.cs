@@ -24,6 +24,7 @@ namespace ECommerceAPI.Persistence.Contexts
 		public DbSet<InvoiceFile> InvoiceFiles { get; set; }
 		public DbSet<Basket> Basket { get; set; }
 		public DbSet<BasketItem> BasketItems { get; set; }
+		public DbSet<CompletedOrder> CompletedOrders { get; set; }
 		public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
 		{
 			var datas = ChangeTracker.Entries<BaseEntity>();
@@ -53,6 +54,13 @@ namespace ECommerceAPI.Persistence.Contexts
 				.HasOne(b => b.Order)
 				.WithOne(o => o.Basket)
 				.HasForeignKey<Order>(o => o.Id);
+
+
+			builder.Entity<Order>()
+				.HasOne(o => o.CompletedOrder)
+				 .WithOne(c=> c.Order)
+				 .HasForeignKey<CompletedOrder>(c => c.OrderId);
+
 
 			base.OnModelCreating(builder);
 

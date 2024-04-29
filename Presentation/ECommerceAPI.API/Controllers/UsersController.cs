@@ -1,5 +1,6 @@
 ﻿using ECommerceAPI.Application.Abstractions.Services;
 using ECommerceAPI.Application.Features.Commands.AppUsers.Register;
+using ECommerceAPI.Application.Features.Commands.AppUsers.UpdatePassword;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,24 +11,23 @@ namespace ECommerceAPI.API.Controllers
 	public class UsersController : ControllerBase
 	{
 		readonly IMediator _mediator;
-		readonly IMailService _mailService;
 
-		public UsersController(IMediator mediator, IMailService mailService)
+		public UsersController(IMediator mediator)
 		{
 			_mediator = mediator;
-			_mailService = mailService;
 		}
 		[HttpPost]
-		public async Task<IActionResult> Register([FromBody] RegisterCommandRequest registerCommandRequest)
+		public async Task<IActionResult> Register([FromBody] RegisterCommandRequest request)
 		{
-		RegisterCommandResponse response = 	await _mediator.Send(registerCommandRequest);
+		RegisterCommandResponse response = 	await _mediator.Send(request);
 			return Ok(response);
 		}
-		[HttpGet]
-		public async Task<IActionResult> ExampleMail()
+		[HttpPost("update-password")]
+		public async Task<IActionResult> UpdatePassword([FromBody] UpdatePasswordCommandRequest request)
 		{
-			await _mailService.SendMailAsync("nijatsoltanli03@gmail.com", "Test Mail","salam salam", false);
-			return Ok();
+			UpdatePasswordCommandResponse response = await _mediator.Send(request);
+			return Ok(response);
 		}
+
 	}
 }

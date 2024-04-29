@@ -42,7 +42,7 @@ namespace ECommerceAPI.Persistence.Repositories
 
 		public bool Remove(T entity)
 		{
-			EntityEntry<T> entityEntry = Table.Remove   (entity);
+			EntityEntry<T> entityEntry = Table.Remove(entity);
 			return entityEntry.State == EntityState.Deleted;
 		}
 

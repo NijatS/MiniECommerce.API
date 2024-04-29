@@ -5,6 +5,7 @@ using ECommerceAPI.Application.DTOs;
 using ECommerceAPI.Application.DTOs.Facebook;
 using ECommerceAPI.Application.Exceptions;
 using ECommerceAPI.Application.Features.Commands.AppUsers.Login;
+using ECommerceAPI.Application.Helpers;
 using ECommerceAPI.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using MediatR;
@@ -85,7 +86,7 @@ namespace ECommerceAPI.Persistence.Services
 				await _userManager.AddLoginAsync(user, info);
 				Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
 
-				await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 5);
+				await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 5);
 				return token;
 			}
 			throw new Exception("Invalid external authentication");
@@ -128,7 +129,7 @@ namespace ECommerceAPI.Persistence.Services
 				throw new Exception("Invalid external authentication");
 
 			Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
-			await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);
+			await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);
 
 			return token;
 
@@ -150,7 +151,7 @@ namespace ECommerceAPI.Persistence.Services
 			{
 				Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime,user);
 
-				await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);
+				await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);
 
 				return token;
 			}
@@ -164,8 +165,8 @@ namespace ECommerceAPI.Persistence.Services
 			if (user != null)
 			{
 				string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
-				byte[] tokenByte = Encoding.UTF8.GetBytes(resetToken);
-				resetToken = WebEncoders.Base64UrlEncode(tokenByte);
+
+				resetToken = resetToken.UrlEncode();
 
 				await _mailService.SendPasswordResetMailAsync(email,user.Id,resetToken);
 			}
@@ -176,7 +177,7 @@ namespace ECommerceAPI.Persistence.Services
 			if (user != null && user?.RefreshTokenEndDate > DateTime.UtcNow)
 			{
 				Token token = _tokenHandler.CreateAccessToken(15,user);
-				await _userService.UpdateRefreshToken(token.RefreshToken,user,token.Expiration,300);
+				await _userService.UpdateRefreshTokenAsync(token.RefreshToken,user,token.Expiration,300);
 				return token;
 			}
 			throw new NotFoundUserException();
@@ -187,10 +188,9 @@ namespace ECommerceAPI.Persistence.Services
 			AppUser? user = await _userManager.FindByIdAsync(userId);
 			if(user != null)
 			{
-				byte[] tokenBytes = WebEncoders.Base64UrlDecode(resetToken);
-				resetToken = Encoding.UTF8.GetString(tokenBytes);
+				resetToken = resetToken.UrlDecode();
 
-				return await _userManager.VerifyUserTokenAsync(user, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetToken", resetToken);
+				return await _userManager.VerifyUserTokenAsync(user, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", resetToken);
 			}
 			return false;
 		}

@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\queries\\order\\getorderbyid\\getorderbyidqueryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\queries\\order\\getallorders\\getallordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\queries\\order\\getallorders\\getallordersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\commands\\order\\completeorder\\completeordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\commands\\order\\completeorder\\completeordercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\features\\commands\\order\\completeorder\\completeordercommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\features\\commands\\order\\completeorder\\completeordercommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{528B1545-9B1A-4E20-A20F-B26F29F28F4E}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.persistence\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528B1545-9B1A-4E20-A20F-B26F29F28F4E}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\ecommerceapi.persistence\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{394C85D9-9594-4FA1-9212-CECEAB336813}|Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.domain\\entities\\completedorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{394C85D9-9594-4FA1-9212-CECEAB336813}|Core\\ECommerceAPI.Domain\\ECommerceAPI.Domain.csproj|solutionrelative:core\\ecommerceapi.domain\\entities\\completedorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,102 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetOrderByIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryHandler.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryHandler.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T21:40:12.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetOrderByIdQueryRequest.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryRequest.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryRequest.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T21:40:11.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetOrderByIdQueryResponse.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetOrderById\\GetOrderByIdQueryResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T21:39:59.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetAllOrdersQueryHandler.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetAllOrders\\GetAllOrdersQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetAllOrders\\GetAllOrdersQueryHandler.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetAllOrders\\GetAllOrdersQueryHandler.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Queries\\Order\\GetAllOrders\\GetAllOrdersQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T21:18:39.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CompletedOrder.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\Entities\\CompletedOrder.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Domain\\Entities\\CompletedOrder.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Domain\\Entities\\CompletedOrder.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Domain\\Entities\\CompletedOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:47:02.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CompleteOrderCommandRequest.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:43:39.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "CompleteOrderCommandHandler.cs",
               "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
               "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
               "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
               "RelativeToolTip": "Core\\ECommerceAPI.Application\\Features\\Commands\\Order\\CompleteOrder\\CompleteOrderCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAQAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABsAAACGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:42:56.349Z"
+              "WhenOpened": "2024-04-30T16:58:50.586Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Controllers\\OrdersController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowC0AAAAMAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAA1wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:41:03.513Z",
+              "WhenOpened": "2024-04-30T16:58:28.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ECommerceAPI.Persistence\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Services\\OrderService.cs",
+              "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistence\\Services\\OrderService.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAkwIwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T16:58:15.804Z",
               "EditorCaption": ""
             }
           ]

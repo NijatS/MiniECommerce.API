@@ -31,7 +31,7 @@ namespace ECommerceAPI.Persistence.Services
 		{
 			string orderCode = (new Random().NextDouble() * 10000).ToString();
 			orderCode = orderCode.Substring(orderCode.IndexOf(".") + 1, orderCode.Length - orderCode.IndexOf(".") - 1);
-			await _orderWriteRepository.AddAsync(new()
+			 await _orderWriteRepository.AddAsync(new()
 			{
 				Address = createOrder.Address,
 				Description = createOrder.Description,
@@ -121,9 +121,11 @@ namespace ECommerceAPI.Persistence.Services
 				Completed = data2.Completed
 			};
 		}
-		public async Task CompleteOrderAsync(string id)
+		public async Task<(bool, CompletedOrderDto)> CompleteOrderAsync(string id)
 		{
-			Order order = await _orderReadRepository.GetByIdAsync(id);
+			Order? order = await _orderReadRepository.Table.Include(o => o.Basket)
+				  .ThenInclude(b => b.AppUser)
+					.FirstOrDefaultAsync(o => o.Id == Guid.Parse(id));
 
 			if (order != null)
 			{
@@ -131,8 +133,15 @@ namespace ECommerceAPI.Persistence.Services
 				{
 					OrderId = Guid.Parse(id),
 				});
-				await _completedOrderWriteRepository.SaveAsync();
+				return (await _completedOrderWriteRepository.SaveAsync()>0,new()
+				{
+					OrderCode = order.OrderCode,
+					FullName = order.Basket.AppUser.FullName,
+					OrderDate = order.CreatedDate,
+					Email = order.Basket.AppUser.Email
+				});
 			}
+			return (false,null);
 		}
 
 	}

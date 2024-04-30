@@ -45,8 +45,16 @@ namespace ECommerceAPI.Infrastructure.Services
 			smtp.Host = _configuration["Mail:Host"];
 
 			await smtp.SendMailAsync(message);
-
 		}
+
+		public async Task SendCompletedOrderMailAsync(string to, string orderCode, DateTime orderDate, string fullName)
+		{
+			string mail = $"Hello, Dear {fullName}<br>" +
+				$"Your order with the following code {orderCode} that you ordered on {orderDate} has been shipped.";
+
+			await SendMailAsync(to, $"Completed No:{orderCode} order", mail, true);
+		}
+
 
 		public async Task SendPasswordResetMailAsync(string to,string userId,string resetToken)
 		{

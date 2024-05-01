@@ -14,12 +14,10 @@ namespace ECommerceAPI.API.Controllers
 		{
 			_applicationService = applicationService;
 		}
-
+		[HttpGet]
 		public IActionResult GetAuthorizeDefinitionEndpoints()
 		{
 			var data = _applicationService.GetAuthorizeDefinitionEndpoints(typeof(Program));
-
-
 			return Ok(data);
 		}
 	}

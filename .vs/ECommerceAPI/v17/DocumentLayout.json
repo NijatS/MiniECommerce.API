@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6CB0A56-4CFA-4CD9-8CF0-09FB04FCDE33}|Infrastructure\\ECommerceAPI.Infrastructure\\ECommerceAPI.Infrastructure.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.infrastructure\\services\\configurations\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6CB0A56-4CFA-4CD9-8CF0-09FB04FCDE33}|Infrastructure\\ECommerceAPI.Infrastructure\\ECommerceAPI.Infrastructure.csproj|solutionrelative:infrastructure\\ecommerceapi.infrastructure\\services\\configurations\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\controllers\\applicationservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\controllers\\applicationservicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\abstractions\\services\\configurations\\iapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\abstractions\\services\\configurations\\iapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6CB0A56-4CFA-4CD9-8CF0-09FB04FCDE33}|Infrastructure\\ECommerceAPI.Infrastructure\\ECommerceAPI.Infrastructure.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.infrastructure\\services\\configurations\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6CB0A56-4CFA-4CD9-8CF0-09FB04FCDE33}|Infrastructure\\ECommerceAPI.Infrastructure\\ECommerceAPI.Infrastructure.csproj|solutionrelative:infrastructure\\ecommerceapi.infrastructure\\services\\configurations\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\dtos\\configuration\\action.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\dtos\\configuration\\action.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\dtos\\configuration\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\dtos\\configuration\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\dtos\\configuration\\action.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\dtos\\configuration\\action.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\core\\ecommerceapi.application\\abstractions\\services\\configurations\\iapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A231D5-C985-4015-B927-E3078DE43CB2}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\abstractions\\services\\configurations\\iapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,34 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationServicesController.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
-              "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T20:12:41.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IApplicationService.cs",
-              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
-              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T20:06:25.79Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -68,26 +42,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ApplicationService.cs",
               "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Infrastructure\\Services\\Configurations\\ApplicationService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\ECommerceAPI.Infrastructure\\Services\\Configurations\\ApplicationService.cs",
               "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Infrastructure\\Services\\Configurations\\ApplicationService.cs",
               "RelativeToolTip": "Infrastructure\\ECommerceAPI.Infrastructure\\Services\\Configurations\\ApplicationService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAoAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAQwDkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T20:02:56.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationServicesController.cs",
+              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
+              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
+              "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Controllers\\ApplicationServicesController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwA0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T20:12:41.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "IApplicationService.cs",
+              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
+              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
+              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Abstractions\\Services\\Configurations\\IApplicationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T20:06:25.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Action.cs",
               "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\DTOs\\Configuration\\Action.cs",
               "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\DTOs\\Configuration\\Action.cs",
               "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\DTOs\\Configuration\\Action.cs",
               "RelativeToolTip": "Core\\ECommerceAPI.Application\\DTOs\\Configuration\\Action.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T20:00:23.688Z",
               "EditorCaption": ""
@@ -100,10 +99,9 @@
               "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\DTOs\\Configuration\\Menu.cs",
               "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\DTOs\\Configuration\\Menu.cs",
               "RelativeToolTip": "Core\\ECommerceAPI.Application\\DTOs\\Configuration\\Menu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T20:00:18.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T20:00:18.122Z"
             }
           ]
         }

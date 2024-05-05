@@ -11,8 +11,8 @@ namespace ECommerceAPI.Application.Abstractions.Services
 	{
 		Task<bool> CreateRole(string name);
 		Task<bool> UpdateRole(string id ,string name);
-		Task<bool> DeleteRole(string name);
-		IDictionary<string,string> GetAllRoles();
+		Task<bool> DeleteRole(string id);
+		(object,int) GetAllRoles(int page,int size);
 		Task<(string id,string name)> GetRoleById(string id);
 
 	}

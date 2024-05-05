@@ -36,7 +36,7 @@ namespace ECommerceAPI.API.Controllers
 		[HttpGet]
 		[AuthorizeDefinition(ActionType = ActionType.Reading, Definition = "Get Roles", Menu = "Roles")]
 
-		public async Task<IActionResult> GetRoles(GetRolesQueryRequest request)
+		public async Task<IActionResult> GetRoles([FromQuery]GetRolesQueryRequest request)
 		{
 			GetRolesQueryResponse response = await _mediator.Send(request);
 			return Ok(response);
@@ -56,9 +56,9 @@ namespace ECommerceAPI.API.Controllers
 			UpdateRoleCommandResponse response = await _mediator.Send(request);
 			return Ok(response);
 		}
-		[HttpDelete]
+		[HttpDelete("{Id}")]
 		[AuthorizeDefinition(ActionType = ActionType.Deleting, Definition = "Delete Role", Menu = "Roles")]
-		public async Task<ActionResult> DeleteRole([FromBody]DeleteRoleCommandRequest request)
+		public async Task<ActionResult> DeleteRole([FromRoute]DeleteRoleCommandRequest request)
 		{
 			DeleteRoleCommandResponse response = await _mediator.Send(request);
 			return Ok(response);

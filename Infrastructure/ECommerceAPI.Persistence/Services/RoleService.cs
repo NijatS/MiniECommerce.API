@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Abstractions.Services;
+﻿using Azure.Core;
+using ECommerceAPI.Application.Abstractions.Services;
 using ECommerceAPI.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -22,6 +23,7 @@ namespace ECommerceAPI.Persistence.Services
 
 			IdentityResult result = await _roleManager.CreateAsync(new()
 			{
+				Id = Guid.NewGuid().ToString(),
 				Name = name,
 			});
 
@@ -29,27 +31,34 @@ namespace ECommerceAPI.Persistence.Services
 		}
 		public async Task<bool> UpdateRole(string id, string name)
 		{
-			IdentityResult result = await _roleManager.UpdateAsync(new()
-			{
-				Id = id,
-				Name = name
-			});
+			AppRole role = await _roleManager.FindByIdAsync(id);
+			role.Name = name;
+
+			IdentityResult result = await _roleManager.UpdateAsync(role);
 
 			return result.Succeeded;
 		}
 
-		public async Task<bool> DeleteRole(string name)
+		public async Task<bool> DeleteRole(string id)
 		{
-			IdentityResult result = await _roleManager.DeleteAsync(new() { Name = name });
+			AppRole role = await _roleManager.FindByIdAsync(id);
+			IdentityResult result = await _roleManager.DeleteAsync(role);
 
 			return result.Succeeded;
 
 		}
 
-		public IDictionary<string, string> GetAllRoles()
+		public (object,int) GetAllRoles(int page,int size)
 		{
-
-			return _roleManager.Roles.ToDictionary(role => role.Id, role => role.Name);
+			var data = _roleManager.Roles
+				 .Skip(page * size)
+				.Take(size)
+				.Select(r => new
+				{
+					r.Id,
+					r.Name
+				});
+			return (data, _roleManager.Roles.Count());
 		}
 
 		public async Task<(string id, string name)> GetRoleById(string id)

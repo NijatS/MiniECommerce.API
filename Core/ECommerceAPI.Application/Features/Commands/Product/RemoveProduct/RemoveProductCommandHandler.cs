@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Repositories;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -10,17 +11,16 @@ namespace ECommerceAPI.Application.Features.Commands.Product.RemoveProduct
 {
 	public class RemoveProductCommandHandler : IRequestHandler<RemoveProductCommandRequest, RemoveProductCommandResponse>
 	{
-		readonly IProductWriteRepository _productWriteRepository;
+		readonly IProductService _productService;
 
-		public RemoveProductCommandHandler(IProductWriteRepository productWriteRepository)
+		public RemoveProductCommandHandler( IProductService productService)
 		{
-			_productWriteRepository = productWriteRepository;
+			_productService = productService;
 		}
 
 		public async Task<RemoveProductCommandResponse> Handle(RemoveProductCommandRequest request, CancellationToken cancellationToken)
 		{
-			await _productWriteRepository.Remove(request.Id);
-			await _productWriteRepository.SaveAsync();
+			await _productService.RemoveProductAsync(request.Id);
 			return new();
 		}
 	}

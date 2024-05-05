@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Repositories;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -12,21 +13,24 @@ namespace ECommerceAPI.Application.Features.Commands.Product.UpdateProduct
 	{
 		readonly IProductWriteRepository _productWriteRepository;
 		readonly IProductReadRepository _productReadRepository;
-		public UpdateProductCommandHandler(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
+		readonly IProductService _productService;
+		public UpdateProductCommandHandler(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IProductService productService)
 		{
 			_productWriteRepository = productWriteRepository;
 			_productReadRepository = productReadRepository;
+			_productService = productService;
 		}
 
 		public async Task<UpdateProductCommandResponse> Handle(UpdateProductCommandRequest request, CancellationToken cancellationToken)
 		{
-			ECommerceAPI.Domain.Entities.Product product = await _productReadRepository.GetByIdAsync(request.Id);
-
-			product.Name = request.Name;
-			product.Price = request.Price;
-			product.Stock = request.Stock;
-
-			await _productWriteRepository.SaveAsync();
+			await _productService.UpdateProductAsync(new()
+			{
+				Id = request.Id,
+				Name = request.Name,
+				Price = request.Price,
+				Stock = request.Stock,
+			});
+		
 			return new();
 		}
 	}

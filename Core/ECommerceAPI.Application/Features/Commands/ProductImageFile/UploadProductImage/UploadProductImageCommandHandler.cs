@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Abstractions.Storage;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.Abstractions.Storage;
 using ECommerceAPI.Application.Repositories;
 using MediatR;
 using System;
@@ -11,32 +12,22 @@ namespace ECommerceAPI.Application.Features.Commands.ProductImageFile.UploadProd
 {
 	public class UploadProductImageCommandHandler : IRequestHandler<UploadProductImageCommandRequest, UploadProductImageCommandResponse>
 	{
-		readonly IProductImageFileWriteRepository _productImageFileWriteRepository;
-		readonly IStorageService _storageService;
-		readonly IProductReadRepository _productReadRepository;
+	
+		readonly IProductService _productService;
 
-		public UploadProductImageCommandHandler(IProductImageFileWriteRepository productImageFileWriteRepository, IStorageService storageService, IProductReadRepository productReadRepository)
+		public UploadProductImageCommandHandler(IProductService productService)
 		{
-			_productImageFileWriteRepository = productImageFileWriteRepository;
-			_storageService = storageService;
-			_productReadRepository = productReadRepository;
+x
+			_productService = productService;
 		}
 
 		public async Task<UploadProductImageCommandResponse> Handle(UploadProductImageCommandRequest request, CancellationToken cancellationToken)
 		{
-			List<(string fileName, string pathOrContainerName)> result = await _storageService.UploadAsync("resource/products", request.Files);
-
-		   ECommerceAPI.Domain.Entities.Product product = await _productReadRepository.GetByIdAsync(request.Id);
-
-			await _productImageFileWriteRepository.AddRangeAsync(result.Select(r => new ECommerceAPI.Domain.Entities.ProductImageFile
+			await _productService.UploadProductImages(new DTOs.Product.UploadProductImages()
 			{
-				FileName = r.fileName,
-				Path = r.pathOrContainerName,
-				Storage = _storageService.StorageName,
-				Products = new List<ECommerceAPI.Domain.Entities.Product>() { product }
-			}).ToList());
-
-			await _productImageFileWriteRepository.SaveAsync();
+				Files = request.Files,
+				Id = request.Id,
+			});
 			return new();
 		}
 	}

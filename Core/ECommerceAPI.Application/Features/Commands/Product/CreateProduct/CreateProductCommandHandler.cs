@@ -1,4 +1,5 @@
 ﻿using ECommerceAPI.Application.Abstractions.Hubs;
+using ECommerceAPI.Application.Abstractions.Services;
 using ECommerceAPI.Application.Repositories;
 using MediatR;
 using System;
@@ -11,24 +12,21 @@ namespace ECommerceAPI.Application.Features.Commands.Product.CreateProduct
 {
     public class CreateProductCommandHandler : IRequestHandler<CreateProductCommandRequest, CreateProductCommandResponse>
     {
-        readonly IProductWriteRepository _productWriteRepository;
-        readonly IProductHubService _productHubService;
-		public CreateProductCommandHandler(IProductWriteRepository productWriteRepository, IProductHubService productHubService)
+        readonly IProductService _productService;
+		public CreateProductCommandHandler(IProductService productService)
 		{
-			_productWriteRepository = productWriteRepository;
-			_productHubService = productHubService;
+	
+			_productService = productService;
 		}
 
 		public async Task<CreateProductCommandResponse> Handle(CreateProductCommandRequest request, CancellationToken cancellationToken)
         {
-            await _productWriteRepository.AddAsync(new()
+            await _productService.CreateProductAsync(new()
             {
                 Name = request.Name,
                 Price = request.Price,
-                Stock = request.Stock
+                Stock = request.Stock,
             });
-            await _productWriteRepository.SaveAsync();
-            await _productHubService.ProductAddedMessageAsync($"{request.Name} adli product elave olunmusdur");
             return new();
         }
     }

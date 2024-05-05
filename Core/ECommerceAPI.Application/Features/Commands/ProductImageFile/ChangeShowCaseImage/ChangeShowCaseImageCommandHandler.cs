@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Repositories;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,38 +12,17 @@ namespace ECommerceAPI.Application.Features.Commands.ProductImageFile.ChangeShow
 {
 	public class ChangeShowCaseImageCommandHandler : IRequestHandler<ChangeShowCaseImageCommandRequest, ChangeShowCaseImageCommandResponse>
 	{
-		readonly  IProductImageFileWriteRepository _productImageFileWriteRepository;
+		readonly IProductService _productService;
 
-		public ChangeShowCaseImageCommandHandler(IProductImageFileWriteRepository productImageFileWriteRepository)
+		public ChangeShowCaseImageCommandHandler( IProductService productService)
 		{
-			_productImageFileWriteRepository = productImageFileWriteRepository;
+			_productService = productService;
 		}
 
 		public async Task<ChangeShowCaseImageCommandResponse> Handle(ChangeShowCaseImageCommandRequest request, CancellationToken cancellationToken)
 		{
-
-			var query = _productImageFileWriteRepository.Table.Include(p => p.Products)
-				.SelectMany(p => p.Products, (pif, p) => new
-				{
-					pif,
-					p
-				});
-			var data = await query.FirstOrDefaultAsync(p => p.p.Id == Guid.Parse(request.ProductId) && p.pif.Showcase);
-
-		if(data != null)
-			{
-				data.pif.Showcase = false;
-			}
-
-			var image =await query.FirstOrDefaultAsync(p => p.pif.Id == Guid.Parse(request.ImageId));
-
-			if(image != null)
-			{
-				image.pif.Showcase = true;
-			}
-			await _productImageFileWriteRepository.SaveAsync();
+			await _productService.ChangeShowCaseImage(request.ImageId, request.ProductId);
 			return new();
-
 		}
 	}
 }

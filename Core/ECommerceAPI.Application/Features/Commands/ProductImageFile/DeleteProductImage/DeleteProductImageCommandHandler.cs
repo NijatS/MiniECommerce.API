@@ -1,4 +1,5 @@
-﻿using ECommerceAPI.Application.Repositories;
+﻿using ECommerceAPI.Application.Abstractions.Services;
+using ECommerceAPI.Application.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,27 +13,19 @@ namespace ECommerceAPI.Application.Features.Commands.ProductImageFile.DeleteProd
 {
 	internal class DeleteProductImageCommandHandler : IRequestHandler<DeleteProductImageCommandRequest, DeleteProductImageCommandResponse>
 	{
-		readonly IProductReadRepository _productReadRepository;
-		readonly IProductWriteRepository _productWriteRepository;
 
-		public DeleteProductImageCommandHandler(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
+		readonly IProductService _productService;
+
+		public DeleteProductImageCommandHandler(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IProductService productService)
 		{
-			_productWriteRepository = productWriteRepository;
-			_productReadRepository = productReadRepository;
+		
+			_productService = productService;
 		}
 
 		public async Task<DeleteProductImageCommandResponse> Handle(DeleteProductImageCommandRequest request, CancellationToken cancellationToken)
 		{
-		ECommerceAPI.Domain.Entities.Product? product = await _productReadRepository.Table.Include(p => p.ProductImageFiles)
-			.FirstOrDefaultAsync(p => p.Id == Guid.Parse(request.Id));
 
-			ECommerceAPI.Domain.Entities.ProductImageFile? imageFile = product?.ProductImageFiles.FirstOrDefault(p => p.Id == Guid.Parse(request.ImageId));
-
-			if (imageFile != null)
-			{
-				product?.ProductImageFiles.Remove(imageFile);
-			}
-			await _productWriteRepository.SaveAsync();
+			await _productService.DeleteProductImage(request.Id, request.ImageId);
 			return new();
 		}
 	}

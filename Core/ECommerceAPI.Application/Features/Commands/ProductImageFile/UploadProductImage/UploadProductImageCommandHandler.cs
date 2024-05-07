@@ -17,7 +17,6 @@ namespace ECommerceAPI.Application.Features.Commands.ProductImageFile.UploadProd
 
 		public UploadProductImageCommandHandler(IProductService productService)
 		{
-x
 			_productService = productService;
 		}
 

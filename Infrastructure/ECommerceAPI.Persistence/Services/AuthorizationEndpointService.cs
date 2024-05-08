@@ -39,19 +39,22 @@ namespace ECommerceAPI.Persistence.Services
 
 			if (_menu == null)
 			{
-				await _menuWriteRepository.AddAsync(new()
+				_menu = new()
 				{
 					Id = Guid.NewGuid(),
 					Name = menu
-				});
+				};
+				await _menuWriteRepository.AddAsync(_menu);
 				await _menuWriteRepository.SaveAsync();
 			}
 
 			Endpoint? endpoint = await _endpointReadRepository.Table.Include(e => e.Menu)
-			 .FirstOrDefaultAsync(e => e.Menu.Name == menu && e.Menu.Name == menu);
+				.Include(e => e.Roles)
+			 .FirstOrDefaultAsync(e => e.Code == code && e.Menu.Name == menu);
 			if (endpoint == null)
 			{
-				var action = _applicationService.GetAuthorizeDefinitionEndpoints(type).FirstOrDefault(e => e.Name == menu)
+				var newAc = _applicationService.GetAuthorizeDefinitionEndpoints(type);
+				var action = _applicationService.GetAuthorizeDefinitionEndpoints(type).FirstOrDefault(m => m.Name.ToLower() == menu.ToLower())
 					?.Actions.FirstOrDefault(e => e.Code == code);
 
 				endpoint = new()
@@ -61,13 +64,18 @@ namespace ECommerceAPI.Persistence.Services
 					HttpType = action.HttpType,
 					Definition = action.Definition,
 					Id = Guid.NewGuid(),
+					Menu = _menu
 				};
 
 				await _endpointWriteRepository.AddAsync(endpoint);
 				await _endpointWriteRepository.SaveAsync();
 
 			}
-			foreach(var role in roles)
+
+			foreach (var role in endpoint.Roles)
+				endpoint.Roles.Remove(role);
+
+			foreach (var role in roles)
 			{
 				AppRole? findedRole = await _roleManager.FindByNameAsync(role);
 
@@ -77,7 +85,18 @@ namespace ECommerceAPI.Persistence.Services
 				}
 			}
 			await _endpointWriteRepository.SaveAsync();
+		}
 
+		public async Task<List<string>> GetRolesToEndpointAsync(string code, string menu)
+		{
+			Endpoint? endpoint = await _endpointReadRepository.Table.Include(e => e.Roles)
+				.Include(e => e.Menu)
+				 .FirstOrDefaultAsync(e => e.Code == code && e.Menu.Name == menu);
+
+			if(endpoint != null)
+			   return endpoint.Roles.Select(r => r.Name).ToList();
+
+			return null;
 		}
 	}
 }

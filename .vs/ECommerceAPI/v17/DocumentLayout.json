@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\codes\\miniecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\filters\\rolepermissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEEB4EDD-9736-4A8C-8DC6-500BB5FFFCD1}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\filters\\rolepermissionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +23,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RolePermissionFilter.cs",
+              "DocumentMoniker": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Filters\\RolePermissionFilter.cs",
+              "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Filters\\RolePermissionFilter.cs",
+              "ToolTip": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Filters\\RolePermissionFilter.cs",
+              "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Filters\\RolePermissionFilter.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwCoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T18:57:50.833Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -2,6 +2,8 @@
 using ECommerceAPI.Application.Abstractions.Services;
 using ECommerceAPI.Application.DTOs.User;
 using ECommerceAPI.Application.Helpers;
+using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.WebUtilities;
@@ -17,11 +19,13 @@ namespace ECommerceAPI.Persistence.Services
 	public class UserService : IUserService
 	{
 		readonly UserManager<AppUser> _userManager;
+		readonly IEndpointReadRepository _endpointReadRepository;
 
 
-		public UserService(UserManager<AppUser> userManager)
+		public UserService(UserManager<AppUser> userManager, IEndpointReadRepository endpointReadRepository)
 		{
 			_userManager = userManager;
+			_endpointReadRepository = endpointReadRepository;
 		}
 		public async Task<CreateUserResponse> CreateAsync(CreateUser model)
 		{
@@ -92,8 +96,8 @@ namespace ECommerceAPI.Persistence.Services
 
 		public async Task AssignRoleToUserAsync(string userId, string[] roles)
 		{
-			AppUser? user =  await _userManager.FindByIdAsync(userId);
-			if(user != null)
+			AppUser? user = await _userManager.FindByIdAsync(userId);
+			if (user != null)
 			{
 				var userRoles = await _userManager.GetRolesAsync(user);
 				await _userManager.RemoveFromRolesAsync(user, userRoles);
@@ -102,15 +106,42 @@ namespace ECommerceAPI.Persistence.Services
 			}
 		}
 
-		public async Task<string[]> GetRolesToUser(string userId)
+		public async Task<string[]> GetRolesToUser(string userIdOrName)
 		{
-			AppUser? user = await _userManager.FindByIdAsync(userId);
-			if(user != null)
+			AppUser? user = await _userManager.FindByIdAsync(userIdOrName);
+			if (user == null)
 			{
-				var userRoles =  await _userManager.GetRolesAsync(user);
+				user = await _userManager.FindByNameAsync(userIdOrName);
+			}
+			if (user != null)
+			{
+				var userRoles = await _userManager.GetRolesAsync(user);
 				return userRoles.ToArray();
 			}
 			return new string[] { };
+		}
+
+		public async Task<bool> HasRolePermissionToEndpointAsync(string userName, string code)
+		{
+			var userRoles = await GetRolesToUser(userName);
+			if (!userRoles.Any())
+				return false;
+
+			Endpoint? endpoint = await _endpointReadRepository.Table
+				.Include(e => e.Roles)
+				 .FirstOrDefaultAsync(e => e.Code == code);
+
+			if (endpoint == null)
+				return false;
+
+			var endpointRoles = endpoint.Roles.Select(r => r.Name);
+			foreach(var userRole in userRoles)
+			{
+				foreach (var endpointRole in  endpointRoles)
+					if (userRole == endpointRole)
+						return true;
+			}
+			return false;
 		}
 
 		public int TotalUsersCount => _userManager.Users.Count();

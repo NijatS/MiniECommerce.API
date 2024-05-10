@@ -1,5 +1,6 @@
 using ECommerceAPI.API.Configurations.ColumnWriters;
 using ECommerceAPI.API.Extensions;
+using ECommerceAPI.API.Filters;
 using ECommerceAPI.Application;
 using ECommerceAPI.Application.Validators.Products;
 using ECommerceAPI.Infrastructure;
@@ -38,7 +39,11 @@ namespace ECommerceAPI.API
 			builder.Services.AddStorage<LocalStorage>();
 			//builder.Services.AddStorage(StorageType.Local);
 
-			builder.Services.AddControllers(option => option.Filters.Add<ValidationFilter>())
+			builder.Services.AddControllers(option =>
+			{
+				option.Filters.Add<ValidationFilter>();
+				option.Filters.Add<RolePermissionFilter>();
+			})
 				.AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())
 				.ConfigureApiBehaviorOptions(option => option.SuppressModelStateInvalidFilter = true);
 			builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials()));

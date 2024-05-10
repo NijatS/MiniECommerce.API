@@ -19,6 +19,7 @@ namespace ECommerceAPI.Application.Abstractions.Services
 		Task UploadProductImages(UploadProductImages uploadProductImages);
 		Task ChangeShowCaseImage(string imageId, string productId);
 		Task DeleteProductImage(string id,string? imageId);
+		Task<byte[]> QRCodeToProductAsync(string productId);
 
 	}
 }

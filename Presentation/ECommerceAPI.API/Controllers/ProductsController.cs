@@ -9,6 +9,7 @@ using ECommerceAPI.Application.Features.Commands.ProductImageFile.DeleteProductI
 using ECommerceAPI.Application.Features.Commands.ProductImageFile.UploadProductImage;
 using ECommerceAPI.Application.Features.Queries.Product.GetAllProduct;
 using ECommerceAPI.Application.Features.Queries.Product.GetByIdProduct;
+using ECommerceAPI.Application.Features.Queries.Product.QRCode;
 using ECommerceAPI.Application.Features.Queries.ProductImageFile.GetProductImages;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -104,5 +105,12 @@ namespace ECommerceAPI.API.Controllers
 			ChangeShowCaseImageCommandResponse response = await _mediator.Send(request);
 			return Ok(response);
 		}
+		[HttpGet("qrcode/{ProductId}")]
+		public async Task<IActionResult> GetQRCodeToProduct([FromRoute] QRCodeQueryRequest request)
+		{
+			QRCodeQueryResponse response = await _mediator.Send(request);
+			return File(response.bytes,"image/png");
+		}
+
 	}
 }

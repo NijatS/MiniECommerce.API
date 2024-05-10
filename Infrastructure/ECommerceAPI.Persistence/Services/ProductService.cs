@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ECommerceAPI.Persistence.Services
@@ -23,16 +24,18 @@ namespace ECommerceAPI.Persistence.Services
 		readonly IProductReadRepository _productReadRepository;
 		readonly IStorageService _storageService;
 		readonly IProductImageFileWriteRepository _productImageFileWriteRepository;
-		public ProductService(IProductWriteRepository productWriteRepository, IProductHubService productHubService, IProductReadRepository productReadRepository, IStorageService storageService, IProductImageFileWriteRepository productImageFileWriteRepository)
+		readonly IQRCodeService _qrCodeService;
+		public ProductService(IProductWriteRepository productWriteRepository, IProductHubService productHubService, IProductReadRepository productReadRepository, IStorageService storageService, IProductImageFileWriteRepository productImageFileWriteRepository, IQRCodeService qrCodeService)
 		{
 			_productWriteRepository = productWriteRepository;
 			_productHubService = productHubService;
 			_productReadRepository = productReadRepository;
 			_storageService = storageService;
 			_productImageFileWriteRepository = productImageFileWriteRepository;
+			_qrCodeService = qrCodeService;
 		}
 
-		public  async Task ChangeShowCaseImage(string imageId, string productId)
+		public async Task ChangeShowCaseImage(string imageId, string productId)
 		{
 			var query = _productImageFileWriteRepository.Table.Include(p => p.Products)
 				.SelectMany(p => p.Products, (pif, p) => new
@@ -82,7 +85,7 @@ namespace ECommerceAPI.Persistence.Services
 			await _productWriteRepository.SaveAsync();
 		}
 
-		public  async Task<ListProduct> GetAllProductsAsync(int page, int size)
+		public async Task<ListProduct> GetAllProductsAsync(int page, int size)
 		{
 			var totalProductCount = _productReadRepository.GetAll(false).Count();
 			var products = _productReadRepository.GetAll(false)
@@ -98,7 +101,7 @@ namespace ECommerceAPI.Persistence.Services
 					p.UpdatedDate,
 					p.ProductImageFiles
 				})
-				.Skip(page *size)
+				.Skip(page * size)
 				.Take(size);
 			return new ListProduct()
 			{
@@ -107,7 +110,7 @@ namespace ECommerceAPI.Persistence.Services
 			};
 		}
 
-		public async  Task<SingleProduct> GetProductByIdAsync(string id)
+		public async Task<SingleProduct> GetProductByIdAsync(string id)
 		{
 			Product product = await _productReadRepository.GetByIdAsync(id, false);
 			return new SingleProduct()
@@ -118,7 +121,26 @@ namespace ECommerceAPI.Persistence.Services
 			};
 		}
 
-		public  async Task RemoveProductAsync(string id)
+		public async Task<byte[]> QRCodeToProductAsync(string productId)
+		{
+			Product product = await _productReadRepository.GetByIdAsync(productId);
+			if (product == null)
+				throw new Exception("Product not found");
+
+			var plainObject = new
+			{
+				product.Id,
+				product.Name,
+				product.Price,
+				product.Stock,
+				product.CreatedDate
+			};
+			string plainText = JsonSerializer.Serialize(plainObject);
+
+			return _qrCodeService.GenerateQRCode(plainText);
+		}
+
+		public async Task RemoveProductAsync(string id)
 		{
 			await _productWriteRepository.Remove(id);
 			await _productWriteRepository.SaveAsync();
@@ -126,7 +148,7 @@ namespace ECommerceAPI.Persistence.Services
 
 		public async Task UpdateProductAsync(UpdateProduct updateProduct)
 		{
-		    Product product = await _productReadRepository.GetByIdAsync(updateProduct.Id);
+			Product product = await _productReadRepository.GetByIdAsync(updateProduct.Id);
 
 			product.Name = updateProduct.Name;
 			product.Price = updateProduct.Price;
@@ -140,7 +162,7 @@ namespace ECommerceAPI.Persistence.Services
 		{
 			List<(string fileName, string pathOrContainerName)> result = await _storageService.UploadAsync("resource/products", uploadProductImages.Files);
 
-		   Product product = await _productReadRepository.GetByIdAsync(uploadProductImages.Id);
+			Product product = await _productReadRepository.GetByIdAsync(uploadProductImages.Id);
 
 			await _productImageFileWriteRepository.AddRangeAsync(result.Select(r => new ECommerceAPI.Domain.Entities.ProductImageFile
 			{

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NGvX845YMzLwJMwO7r3WVOL0lrQZgyMozzF4jKXmrREYBnZADgLRx2jtuC1XuakUXns1vzrpQlBLLzUGHBoXZA==",
+  "dgSpecHash": "pXf0vjqi1aKKWD/G9idilI3BbiNdkD9IM0oSEVWwYcDqG0SehCGuV3uZtvo/aD1QJy9+0viwFf5fbniw/9UU0Q==",
   "success": true,
   "projectFilePath": "C:\\Codes\\MiniECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Infrastructure\\ECommerceAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -66,6 +66,7 @@
     "C:\\Users\\Nijat\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Nijat\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Nijat\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Nijat\\.nuget\\packages\\qrcoder\\1.5.1\\qrcoder.1.5.1.nupkg.sha512",
     "C:\\Users\\Nijat\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Nijat\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
     "C:\\Users\\Nijat\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",

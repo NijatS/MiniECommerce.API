@@ -73,11 +73,11 @@ namespace ECommerceAPI.Persistence
 			service.AddScoped<IEndpointWriteRepository, EndpointWriteRepository>();
 
 			service.AddScoped<IUserService,UserService>();
-			service.AddScoped<IAuthService, AuthService>();
 			service.AddScoped<IRoleService, RoleService>();
 
 			service.AddScoped<IExternalAuthentication, AuthService>();
 			service.AddScoped<IInternalAuthentication, AuthService>();
+			service.AddScoped<IAuthService, AuthService>();
 
 			service.AddScoped<IBasketService, BasketService>();
 			service.AddScoped<IOrderService,OrderService>();
